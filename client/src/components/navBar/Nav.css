@@ -17,11 +17,12 @@
   }
 
 .NavBar{
+    height: auto;
     display: flex;
     justify-content: space-between;
     background-color: var(--primary);
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
     border-bottom: 4px solid var(--secondary);
 }
 
@@ -33,23 +34,22 @@
 .links{
     display: flex;
     align-items: center;
+    width: auto;
+    height: auto;
+    
 }
-.links ul{
-    list-style: none;
-    padding: 0;
-}
-.links ul li{
-    display: inline;
-    margin-right: var(--spacer-3);
-}
-.links ul li a{
-    text-decoration: none;
+.links button{
     color: var(--gray-0);
     font-size: 22px;
     font-weight: bold;
-    line-height: 1.9;
-    transition: text-decoration 0.3 ease;
+    width: 170px;
+    height: 90px;
+    border: none;
+    font-size: var(--font-size-3);
+    background-color: var(--primary);
 }
-.links ul li a:hover {
-    text-decoration: underline;
+.links button:hover {
+    background: var(--secondary);
+    color: var(--primary);
+    border: none;
 }
