@@ -10,7 +10,7 @@ const routes = [
     component: LandingPage
   },
   {
-    path: '/sobreNosotros',
+    path: '/nosotros',
     name: 'Nosotros',
     component: Nosotros
   }
