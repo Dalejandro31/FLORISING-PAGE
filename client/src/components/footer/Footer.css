@@ -1,0 +1,29 @@
+:root {
+    --gray-0:#646464;
+    --gray-1:#b2b6bd;
+    --primary: #f7f4f3;
+    --secondary: #fdc600;
+    --font-size-1: 1.5rem;
+    --font-size-2: 1.25rem;
+    --font-size-3: 1rem;
+    --font-weight-thin: 300;
+    --font-weight-bold: 600;
+    --font-weight-heavy: 800;
+    --spacer-1: .25rem;
+    --spacer-2: .5rem;
+    --spacer-3: 1rem;
+    --spacer-4: 1.5rem;
+    --spacer-5: 2rem;
+    --shadows: 7px 7px 7px rgba(0, 0, 0, .15);
+  }
+
+
+.footer{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--gray-0);
+    padding-left: 3%;
+    padding-right: 3%;
+    border-top: 10px solid var(--secondary);
+}
