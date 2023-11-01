@@ -1,0 +1,55 @@
+:root {
+    --gray-0:#646464;
+    --primary: #f7f4f3;
+    --secondary: #fdc600;
+    --font-size-1: 1.5rem;
+    --font-size-2: 1.25rem;
+    --font-size-3: 1rem;
+    --font-weight-thin: 300;
+    --font-weight-bold: 600;
+    --font-weight-heavy: 800;
+    --spacer-1: .25rem;
+    --spacer-2: .5rem;
+    --spacer-3: 1rem;
+    --spacer-4: 1.5rem;
+    --spacer-5: 2rem;
+    --shadows: 7px 7px 7px rgba(0, 0, 0, .15);
+  }
+
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+    padding-left: 5%;
+    padding-right: 5%;
+    border-bottom: 4px solid var(--secondary);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: var(--gray-0);
+}
+.links{
+    display: flex;
+    align-items: center;
+}
+.links ul{
+    list-style: none;
+    padding: 0;
+}
+.links ul li{
+    display: inline;
+    margin-right: var(--spacer-3);
+}
+.links ul li a{
+    text-decoration: none;
+    color: var(--gray-0);
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.9;
+    transition: text-decoration 0.3 ease;
+}
+.links ul li a:hover {
+    text-decoration: underline;
+}
