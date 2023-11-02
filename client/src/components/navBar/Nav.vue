@@ -4,17 +4,22 @@
             <p>FLORISING</p>
         </div>
         <div class="links">
-            <button href="">INICIO</button>
-            <button href="">SERVICIOS</button>
-            <button href="">SOBRE NOSOTROS</button>
-            <button href="">CONTACTANOS</button>
+            <button @click="redirigir('/')">INICIO</button>
+            <button >SERVICIOS</button>
+            <button @click="redirigir('/nosotros')">SOBRE NOSOTROS</button>
+            <button >CONTACTANOS</button>
         </div>
     </nav>
 </template>
 
 <script>
 export default {
-    name: 'NavBar'
+    name: 'NavBar',
+    methods:{
+        redirigir(ruta){
+            this.$router.push(ruta);
+        }
+    }
 }
 </script>
 <style scoped>
