@@ -1,29 +1,18 @@
 const content = {};
 
 content.title = `Acerca De Nuestra Empresa`;
-content.content1 = `<h2>Dachshund</h2>
-<p>
-Also known as the wiener dog, badger dog, or sausage dog, is a short-legged,
-long-bodied, hound-type dog breed. They may be smooth, wire, or long-haired.
-</p>
-<p>
-The standard-sized dachshund was developed to scent, chase, and flush out
-badgers and other burrow-dwelling animals, while the miniature dachshund was
-bred to hunt small animals such as rabbits and mice.
-</p>`;
-content.content2 = `<h2>Corgi</h2>
-<p>
-The Welsh Corgi or Corgi, plural Corgis, is a small type of herding dog that
-originated in Wales.
-</p>
-<p>
-Two separate breeds are recognised: the Pembroke Welsh Corgi and the Cardigan
-Welsh Corgi.
-</p>
-<p>
-Overall the Cardigan is larger, both in weight and in height.
-Their tails are of different shapes.
-</p>`;
+content.content1 = 
+    `Desde 2012 FLORISING CLG (NUEVARAZON SOCIAL),
+    ha dirigido sus esfuerzos garantizando la cadena de
+    frío en el tratamiento de productos
+    perecederos.`;
+content.content2 = `Hemos establecido un centro de carga
+en frío, con el n de brindar elservicio
+de almacenamiento y consolidación,
+para las diferentes empresas que
+necesiten ubicar sus productos bajo
+condiciones controladas de
+temperatura`;
 content.content3 = `<h2>Mongrel</h2>
 <p>
 A mongrel, mutt or mixed-breed dog is a dog that does not belong to one
@@ -40,3 +29,5 @@ content.navlinks = `
     <li class="active"><a href="#">Our Pets</a></li>
     <li><a href="#">Logout</a></li>
   </ul>`;
+
+export {content}

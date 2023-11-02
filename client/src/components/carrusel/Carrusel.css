@@ -53,9 +53,13 @@
 }
 .left{
     left: 0;
+    border-radius: .8rem;
+    margin-left: 1rem;
 }
 .right{
     right: 0;
+    border-radius: .8rem;
+    margin-right: 1rem;
 }
 
 /*************** Carrusel indicators ********************/
