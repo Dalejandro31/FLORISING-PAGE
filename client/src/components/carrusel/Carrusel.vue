@@ -29,6 +29,7 @@
     import  CarruselItem from '@/components/carrusel/CarruselItem.vue'
     import  CarruselControls from '@/components/carrusel/CarruselControls.vue'
     import  CarruselIndicators from '@/components/carrusel/CarruselIndicators.vue'
+
     export default{
         props: {
             slides: {
@@ -48,19 +49,22 @@
                 default: 5000,
             }
         },
+
         components: { CarruselItem, CarruselControls, CarruselIndicators },
         data: () => ({
-            currentSlide: 4,
+            currentSlide: 0,
             sliderInterval: null,
             direction: "right"
         }),
+
         methods:{
             setCurrentslide (index){
                 this.currentSlide = index;
             },
-            prev (step = -1) {
-                const index = 
-                this.currentSlide > 0 ? this.currentSlide - step : this.slides.length -1;
+            prev(step = -1) {
+                const index =
+                this.currentSlide > 0 
+                ? this.currentSlide + step : this.slides.length -1;
                 this.setCurrentslide(index);
                 this.direction = "left";
                 this.startslideTimer();

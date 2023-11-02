@@ -1,5 +1,16 @@
 <template>
     <carrusel :slides="slides" :interval="3000" controls indicators=""/>
+    <section>
+      <div>
+        <p>
+
+        </p>
+      </div>
+
+      <div>
+        <img src="" alt="">
+      </div>
+    </section>
 </template>
   
 <script>

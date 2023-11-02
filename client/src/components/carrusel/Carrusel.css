@@ -4,8 +4,8 @@
 }
 .carrusel-inner{
     position: relative;
-    width: 900px;
-    height: 400px;
+    width: 100%;
+    height: 550px;
     overflow: hidden;
 }
 
@@ -75,7 +75,6 @@
     opacity: .5;
     margin: 0.2em;
     border-radius: 50%;
-    cursor: pointer;
 }
 .active{
     opacity: 1;
