@@ -1,6 +1,6 @@
 const content = {};
 
-content.title = `Acerca De Nuestra Empresa`;
+content.title = `ACERCA DE NUESTRA EMPRESA`;
 content.content1 = 
     `Desde 2012 FLORISING CLG (NUEVARAZON SOCIAL),
     ha dirigido sus esfuerzos garantizando la cadena de
@@ -13,21 +13,16 @@ para las diferentes empresas que
 necesiten ubicar sus productos bajo
 condiciones controladas de
 temperatura`;
-content.content3 = `<h2>Mongrel</h2>
-<p>
-A mongrel, mutt or mixed-breed dog is a dog that does not belong to one
-officially recognized breed and is not the result of intentional breeding.
-</p>
-<p>
-Although mongrels are viewed as of less commercial value than intentionally
-bred dogs, they are thought to be less susceptible to genetic health problems
-associated with inbreeding.
-</p>`;
-content.navlinks = `
-  <ul>
-    <li><a href="#">Adopt</a></li>
-    <li class="active"><a href="#">Our Pets</a></li>
-    <li><a href="#">Logout</a></li>
-  </ul>`;
+content.title1= `NUESTROS SERVICIOS`
+content.title2= `Almacenamiento En Frio`
+content.content3 = `Operaciones de Cross Docking Capacidad
+de 460 Mts³ Refrigeración hasta - 18°C`;
+content.title3= `Recepcion y consolidacion en frio`
+content.content4 = `Material de empaque
+(Estibas, esquineros, zunchos...) Armado de pallets
+(Organización y tratamiento adecuado...)`;
+content.title4= `Otros Servicios`
+content.content5 = `Centro de negocios / Oficinas disponibles `;
+
 
 export {content}
