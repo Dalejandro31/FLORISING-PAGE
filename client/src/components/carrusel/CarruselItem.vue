@@ -2,7 +2,7 @@
     
         <transition :name="transitionEffect">
             <div class="carrusel-item" v-show="currentSlide === index">
-                <img :src="slide" />
+                <img :src="slide" class="carrusel-img" />
             </div>
         </transition>
     

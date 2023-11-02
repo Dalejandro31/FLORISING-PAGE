@@ -1,6 +1,12 @@
 <template>
     <div class="carrusel">
         <div class="carrusel-inner">
+            <CarruselIndicators
+                v-if="indicators"
+                :total="slides.length" 
+                :current-index="currentSlide"
+                @switch="switchSlide($event)"
+            />
             <CarruselItem 
                 v-for="(slide, index) in slides" 
                 :slide="slide" 
@@ -9,7 +15,11 @@
                 :index="index"
                 :direction="direction"
             />
-            <CarruselControls @prev="prev" @next="next"/>
+            <CarruselControls 
+                v-if="controls" 
+                @prev="prev" 
+                @next="next"
+            />
         </div>
     </div>
 </template>
@@ -18,9 +28,27 @@
 <script>
     import  CarruselItem from '@/components/carrusel/CarruselItem.vue'
     import  CarruselControls from '@/components/carrusel/CarruselControls.vue'
+    import  CarruselIndicators from '@/components/carrusel/CarruselIndicators.vue'
     export default{
-        props: ['slides'],
-        components: { CarruselItem, CarruselControls },
+        props: {
+            slides: {
+                type: Array,
+                required: true
+            },
+            controls: {
+                type: Boolean,
+                default: false,
+            },
+            indicators: {
+                type: Boolean,
+                default: false
+            },
+            interval:{
+                type: Number,
+                default: 5000,
+            }
+        },
+        components: { CarruselItem, CarruselControls, CarruselIndicators },
         data: () => ({
             currentSlide: 4,
             sliderInterval: null,
@@ -30,22 +58,42 @@
             setCurrentslide (index){
                 this.currentSlide = index;
             },
-            prev () {
+            prev (step = -1) {
                 const index = 
-                this.currentSlide > 0 ? this.currentSlide - 1 : this.slides.length -1;
+                this.currentSlide > 0 ? this.currentSlide - step : this.slides.length -1;
                 this.setCurrentslide(index);
                 this.direction = "left";
+                this.startslideTimer();
             },
-            next () {
-                const index = this.currentSlide < this.slides.length -1 ? this.currentSlide + 1 : 0;
+            _next(step = 1){
+                const index = this.currentSlide < this.slides.length -1 ? this.currentSlide + step : 0;
                 this.setCurrentslide(index);
                 this.direction = "right";
+            },  
+            next (step = 1) {
+                this._next(step);
+                this.startslideTimer();
             },
+            startslideTimer(){
+                this.stopSlideTimer();
+                this.sliderInterval = setInterval(() => {
+                    this.next()
+                }, this.interval);
+            },
+            stopSlideTimer(){
+                clearInterval(this.sliderInterval);  
+            },
+            switchSlide(index){
+                const step = index - this.currentSlide;
+                if (step > 0) {
+                    this.next(step)
+                }else{
+                    this.prev(step)
+                }
+            }
         },
         mounted (){
-             this.sliderInterval = setInterval(() => {
-                 this.next()
-             }, 6000)
+            this.startslideTimer();
         },
         beforeMount(){
             clearInterval(this.sliderInterval)

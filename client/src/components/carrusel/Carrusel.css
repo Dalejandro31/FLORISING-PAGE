@@ -57,3 +57,30 @@
 .right{
     right: 0;
 }
+
+/*************** Carrusel indicators ********************/
+
+.carrusel-indicators{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 1.5em;
+    z-index: 2;
+}
+.carrusel-indicators-item{
+    width: 15px;
+    height: 15px;
+    border: none;
+    background: #fff;
+    opacity: .5;
+    margin: 0.2em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.active{
+    opacity: 1;
+}
+.carrusel-img{
+    height: 100%;
+    width: 100%;
+}
