@@ -1,0 +1,86 @@
+:root {
+    --gray-0:#646464;
+    --gray-1:#b2b6bd;
+    --primary: #f7f4f3;
+    --secondary: #fdc600;
+    --font-size-1: 1.5rem;
+    --font-size-2: 1.25rem;
+    --font-size-3: 1rem;
+    --font-weight-thin: 300;
+    --font-weight-bold: 600;
+    --font-weight-heavy: 800;
+    --spacer-1: .25rem;
+    --spacer-2: .5rem;
+    --spacer-3: 1rem;
+    --spacer-4: 1.5rem;
+    --spacer-5: 7rem;
+    --shadows: 7px 7px 7px rgba(0, 0, 0, .15);
+  }
+
+.nuestra-empresa{
+    display: flex;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: auto;
+    width: 50%;
+    padding: var(--spacer-5);
+    color: var(--gray-0);
+    
+}
+.contenido p{
+    margin: 0 0 var(--spacer-3);
+    line-height: 1.5;
+    word-wrap: break-word;
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-thin);
+}
+.contenido button{
+    width: 30%;
+    height: 50px;
+    margin-top: var(--spacer-4);
+    background-color: var(--secondary);
+    border: none;
+    color: var(--gray-0);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-heavy);
+    border-radius: .8rem;
+}
+.contenido button:hover{
+    width: 30%;
+    height: 50px;
+    margin-top: var(--spacer-4);
+    background-color: var(--secondary);
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+}
+.contenido div{
+    width: 300px;
+    height: 4px; 
+    background-color: var(--secondary);
+    margin-top: 10px; 
+}
+.infraestructura{
+    display: flex;
+    height: auto;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding-right: var(--spacer-5);
+    padding-top: var(--spacer-4);
+}
+.infraestructura div{
+    --shadowColor: var(--secondary);
+    width: auto;
+    box-shadow: 0.80rem 0.80rem 0 var(--shadowColor);
+	border-radius: 0.8rem;
+	overflow: hidden;
+	border: 0.1rem solid;
+}
+.infraestructura div img{
+    width: 600px;
+	height: 500px;
+}

@@ -47,9 +47,11 @@
     border: none;
     font-size: var(--font-size-3);
     background-color: var(--primary);
+    border-radius: .5rem;
 }
 .links button:hover {
     background: var(--secondary);
     color: var(--primary);
     border: none;
+    cursor: pointer;
 }
