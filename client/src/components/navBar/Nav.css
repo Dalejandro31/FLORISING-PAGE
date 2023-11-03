@@ -1,35 +1,37 @@
 :root {
-    --gray-0:#646464;
-    --primary: #f7f4f3;
-    --secondary: #fdc600;
-    --font-size-1: 1.5rem;
-    --font-size-2: 1.25rem;
-    --font-size-3: 1rem;
-    --font-weight-thin: 300;
-    --font-weight-bold: 600;
-    --font-weight-heavy: 800;
-    --spacer-1: .25rem;
-    --spacer-2: .5rem;
-    --spacer-3: 1rem;
-    --spacer-4: 1.5rem;
-    --spacer-5: 2rem;
-    --shadows: 7px 7px 7px rgba(0, 0, 0, .15);
+    --gray-0-nav:#646464;
+    --primary-nav: #f7f4f3;
+    --gray-1-nav:#b2b6bd;
+    --secondary-nav: #fdc600;
+    --font-size-1-nav: 1.5rem;
+    --font-size-2-nav: 1.25rem;
+    --font-size-3-nav: 1rem;
+    --font-weight-thin-nav: 300;
+    --font-weight-bold-nav: 600;
+    --font-weight-heavy-nav: 800;
+    --spacer-1-nav: .25rem;
+    --spacer-2-nav: .5rem;
+    --spacer-3-nav: 1rem;
+    --spacer-4-nav: 1.5rem;
+    --spacer-5-nav: 2rem;
+    --shadows-nav: 7px 7px 7px rgba(0, 0, 0, .15);
   }
 
 .NavBar{
     height: auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--primary);
+    background-color: var(--primary-nav);
     padding-left: 3%;
     padding-right: 3%;
-    border-bottom: 4px solid var(--secondary);
+    border-bottom: 4px solid var(--secondary-nav);
 }
 
 .logo{
     display: flex;
     align-items: center;
-    color: var(--gray-0);
+    color: var(--gray-0-nav);
 }
 .links{
     display: flex;
@@ -39,19 +41,19 @@
     
 }
 .links button{
-    color: var(--gray-0);
+    color: var(--gray-0-nav);
     font-size: 22px;
     font-weight: bold;
     width: 170px;
     height: 90px;
     border: none;
-    font-size: var(--font-size-3);
-    background-color: var(--primary);
+    font-size: var(--font-size-3-nav);
+    background-color: var(--primary-nav);
     border-radius: .5rem;
 }
 .links button:hover {
-    background: var(--secondary);
-    color: var(--primary);
+    background: var(--secondary-nav);
+    color: var(--primary-nav);
     border: none;
     cursor: pointer;
 }

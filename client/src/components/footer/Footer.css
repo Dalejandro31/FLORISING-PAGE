@@ -1,20 +1,20 @@
 :root {
-    --gray-0:#646464;
-    --gray-1:#b2b6bd;
-    --primary: #f7f4f3;
-    --secondary: #fdc600;
-    --font-size-1: 1.5rem;
-    --font-size-2: 1.25rem;
-    --font-size-3: 1rem;
-    --font-weight-thin: 300;
-    --font-weight-bold: 600;
-    --font-weight-heavy: 800;
-    --spacer-1: .25rem;
-    --spacer-2: .5rem;
-    --spacer-3: 1rem;
-    --spacer-4: 1.5rem;
-    --spacer-5: 2rem;
-    --shadows: 7px 7px 7px rgba(0, 0, 0, .15);
+    --gray-0-footer:#646464;
+    --gray-1-footer:#b2b6bd;
+    --primary-footer: #f7f4f3;
+    --secondary-footer: #fdc600;
+    --font-size-1-footer: 1.5rem;
+    --font-size-2-footer: 1.25rem;
+    --font-size-3-footer: 1rem;
+    --font-weight-thin-footer: 300;
+    --font-weight-bold-footer: 600;
+    --font-weight-heavy-footer: 800;
+    --spacer-1-footer: .25rem;
+    --spacer-2-footer: .5rem;
+    --spacer-3-footer: 1rem;
+    --spacer-4-footer: 1.5rem;
+    --spacer-5-footer: 2rem;
+    --shadows-footer: 7px 7px 7px rgba(0, 0, 0, .15);
   }
 
 
@@ -22,8 +22,8 @@
     height: auto;
     display: flex;
     justify-content: space-between;
-    background-color: var(--gray-0);
+    background-color: var(--gray-0-footer);
     padding-left: 3%;
     padding-right: 3%;
-    border-top: 10px solid var(--secondary);
+    border-top: 10px solid var(--secondary-footer);
 }
