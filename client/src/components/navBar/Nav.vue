@@ -5,7 +5,7 @@
         </div>
         <div class="links">
             <button @click="redirigir('/')">INICIO</button>
-            <button >SERVICIOS</button>
+            <button @click="redirigir('/servicios')">SERVICIOS</button>
             <button @click="redirigir('/nosotros')">SOBRE NOSOTROS</button>
             <button >CONTACTANOS</button>
         </div>
