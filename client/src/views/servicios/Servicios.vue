@@ -2,10 +2,11 @@
     <div>
         <h1 class="titulo"> SERVICIOS </h1>
     </div>
+    <div class="separ-top"/>
     <section class="nuestro-servicio">
         <div class="imagenes">
             <div>
-                <carrusel :slides="slidesRecepcion" :interval="3000" controls indicators =""/>
+                <carrusel :slides="slidesRecepcion" :interval="5000" controls indicators =""/>
             </div>
         </div>
         <div class="contenido">
@@ -14,14 +15,12 @@
             <br>
             <br>
             <p>{{ content.recepcionfrio1 }}</p>
-            <br>
             <p>{{ content.recepcionfrio2 }}</p>
-            <br>
             <p>{{ content.recepcionfrio3 }}</p>
-            <br>
             <p>{{ content.recepcionfrio4 }}</p>
         </div>
     </section>
+    <div class="separ"/>
     <section class="nuestro-servicio">
         <div class="contenido">
             <h1>{{content.title2}}</h1>
@@ -29,20 +28,20 @@
             <br>
             <br>
             <p>{{ content.almacenamientoFrio }}</p>
-            <br>
             <p>{{ content.almacenamientoFrio2 }}</p>
         </div>
         <div class="imagenes">
             <div >
-                <carrusel :slides="slidesCuartosFrios" :interval="3000" controls indicators =""/>
+                <carrusel :slides="slidesCuartosFrios" :interval="5000" controls indicators =""/>
 
             </div>
         </div>
     </section>
+    <div class="separ"/>
     <section class="nuestro-servicio">
         <div class="imagenes">
             <div>
-                <carrusel :slides="slidesTransportes" :interval="3000" controls indicators =""/>
+                <carrusel :slides="slidesTransportes" :interval="5000" controls indicators =""/>
             </div>
         </div>
         <div class="contenido">
@@ -53,6 +52,7 @@
             <p>{{ content.transporteRefrigerado }}</p>
         </div>
     </section>
+    <div class="separ"/>
     <section class="nuestro-servicio">
         <div class="contenido">
             <h1>{{ content.title4 }}</h1>
@@ -63,7 +63,7 @@
         </div>
         <div class="imagenes">
             <div>
-                <carrusel :slides="slidesOtros" :interval="3000" controls indicators =""/>
+                <carrusel :slides="slidesOtros" :interval="5000" controls indicators =""/>
 
             </div>
         </div>
@@ -86,14 +86,14 @@ import Carrusel from '@/components/carrusel/Carrusel.vue'
             require('@/assets/RecepcionRayosX.png'),
         ],
         slidesCuartosFrios: [
-        require('@/assets/CuartosFrios.png'),
-        require('@/assets/barreraInternaCuartosFrios.jpg'),
+            require('@/assets/CuartosFrios.png'),
+            require('@/assets/barreraInternaCuartosFrios.jpg'),
         ],
         slidesTransportes: [
-        require('@/assets/contenedorRefrigerado.png'),
+            require('@/assets/contenedorRefrigerado.png'),
         ],
         slidesOtros: [
-        require('@/assets/OtrosServicios1.png'),
+            require('@/assets/OtrosServicios1.png'),
         ],
         content: content
     })
