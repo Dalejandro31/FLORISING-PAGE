@@ -12,7 +12,7 @@
       </div>
       <div class="infraestructura">
         <div>
-          <img src="../../assets/infraestructura.jpg" alt="">
+          <img src="../../assets/infraestructura.jpg" alt="infraestructura">
         </div>
       </div>
     </section>

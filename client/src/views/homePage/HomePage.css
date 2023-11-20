@@ -1,24 +1,25 @@
 :root {
-    --gray-0:#646464;
-    --gray-1:#b2b6bd;
-    --primary: #f7f4f3;
-    --secondary: #fdc600;
-    --font-size-1: 1.5rem;
-    --font-size-2: 1.25rem;
-    --font-size-3: 1rem;
-    --font-weight-thin: 300;
-    --font-weight-bold: 600;
-    --font-weight-heavy: 800;
-    --spacer-1: .25rem;
-    --spacer-2: .5rem;
-    --spacer-3: 1rem;
-    --spacer-4: 1.5rem;
-    --spacer-5: 7rem;
-    --shadows: 7px 7px 7px rgba(0, 0, 0, 0.473);
+    --gray-0-contenido:#646464;
+    --gray-1-contenido:#b2b6bd;
+    --primary-contenido: #f7f4f3;
+    --secondary-contenido: #fdc600;
+    --font-size-1-contenido: 1.5rem;
+    --font-size-2-contenido: 1.25rem;
+    --font-size-3-contenido: 1rem;
+    --font-weight-thin-contenido: 300;
+    --font-weight-bold-contenido: 600;
+    --font-weight-heavy-contenido: 800;
+    --spacer-1-contenido: .25rem;
+    --spacer-2-contenido: .5rem;
+    --spacer-3-contenido: 1rem;
+    --spacer-4-contenido: 1.5rem;
+    --spacer-5-contenido: 7rem;
+    --shadows-contenido: 7px 7px 7px rgba(0, 0, 0, 0.473);
   }
 
 .nuestra-empresa{
     display: flex;
+    margin-top: var(--spacer-5-contenido);
 }
 .contenido{
     display: flex;
@@ -26,43 +27,43 @@
     text-align: justify;
     height: auto;
     width: 50%;
-    padding: var(--spacer-5);
-    color: var(--gray-0);
+    padding: var(--spacer-5-contenido);
+    color: var(--gray-0-contenido);
     
 }
 .contenido p{
-    margin: 0 0 var(--spacer-3);
+    margin: 0 0 var(--spacer-3-contenido);
     line-height: 1.5;
     word-wrap: break-word;
-    font-size: var(--font-size-2);
-    font-weight: var(--font-weight-thin);
+    font-size: var(--font-size-2-contenido);
+    font-weight: var(--font-weight-thin-contenido);
 }
 .contenido button{
     width: 30%;
     height: 50px;
-    margin-top: var(--spacer-4);
-    background-color: var(--secondary);
+    margin-top: var(--spacer-4-contenido);
+    background-color: var(--secondary-contenido);
     border: none;
-    color: var(--gray-0);
-    font-size: var(--font-size-3);
-    font-weight: var(--font-weight-bold);
+    color: var(--gray-0-contenido);
+    font-size: var(--font-size-3-contenido);
+    font-weight: var(--font-weight-bold-contenido);
     border-radius: .5rem;
 }
 .contenido button:hover{
     width: 30%;
     height: 50px;
-    margin-top: var(--spacer-4);
-    background-color: var(--secondary);
+    margin-top: var(--spacer-4-contenido);
+    background-color: var(--secondary-contenido);
     border: none;
-    color: var(--primary);
+    color: var(--primary-contenido);
     cursor: pointer;
-    font-weight: var(--font-weight-heavy);
+    font-weight: var(--font-weight-heavy-contenido);
 
 }
 .contenido div{
     width: 350px;
     height: 4px; 
-    background-color: var(--secondary);
+    background-color: var(--secondary-contenido);
     margin-top: 10px; 
     border-radius: 1rem;
 }
@@ -72,16 +73,17 @@
     width: 50%;
     align-items: center;
     justify-content: center;
-    padding-right: var(--spacer-5);
-    padding-top: var(--spacer-4);
+    padding-right: var(--spacer-5-contenido);
+    padding-left: var(--spacer-5-contenido);
+    padding-top: var(--spacer-4-contenido);
 }
 .infraestructura div{
-    --shadowColor: var(--secondary);
+    --shadowColor: var(--secondary-contenido);
     width: auto;
     box-shadow: 0.80rem 0.80rem 0 var(--shadowColor);
 	border-radius: 0.5rem;
 	overflow: hidden;
-	border: .2rem solid var(--gray-0);
+	border: .2rem solid var(--gray-0-contenido);
 }
 .infraestructura div img{
     width: 600px;
@@ -101,35 +103,35 @@
 .card-servicios{
     width: auto;
     height: 100%;
-    box-shadow: var(--shadows);
-    border: solid 1px var(--gray-2);
+    box-shadow: var(--shadows-contenido);
+    border:none;
     display: flex;
     flex-direction: column;
     text-align: center;
-    border-radius: .8rem;
+    border-radius: .5rem;
 }
 .card-servicios button{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary);
-    padding: var(--spacer-2);
+    background-color: var(--secondary-contenido);
+    padding: var(--spacer-2-contenido);
     border: none;
     border-radius: .2rem;
     margin-top:auto ;
-    font-size: var(--font-size-3);
-    font-weight: var(--font-weight-bold);
-    color: var(--gray-0);
+    font-size: var(--font-size-3-contenido);
+    font-weight: var(--font-weight-bold-contenido);
+    color: var(--gray-0-contenido);
 }
 .card-servicios button:hover{
     cursor: pointer;
-    color: var(--primary);
+    color: var(--primary-contenido);
     border-radius: .5rem;
-    font-weight: var(--font-weight-heavy);
+    font-weight: var(--font-weight-heavy-contenido);
 }
 
 [name="titulo"]{
-    font-weight: var(--font-weight-heavy);
+    font-weight: var(--font-weight-heavy-contenido);
     font-size: var(--font-size-2);
     color: var(--gray-0);
     margin-bottom: 2rem;
