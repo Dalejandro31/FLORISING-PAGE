@@ -8,17 +8,19 @@
         <!-- // se le añade un display felx colum 
         //div -> titulo
         //div -> div -> img : div -> texto -->
+        
         <div class = "ejemplo">
             <p>{{ content.title1 }}</p>
         </div>
+
         <div class="imagenes">
             <div>
                 <carrusel :slides="slidesRecepcion" :interval="5000" controls indicators =""/>
             </div>
         </div>
         <div class="contenido">
-            <br>
             <div/>
+            <br>
             <br>
             <p>{{ content.recepcionfrio1 }}</p>
             <p>{{ content.recepcionfrio2 }}</p>
