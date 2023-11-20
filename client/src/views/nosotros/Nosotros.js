@@ -46,7 +46,20 @@ content.tituloObjetivos = `OBJETIVOS DEL SGCS BASC`;
 content.content5 = `Florisig Commercial & Logistics Group S.A.S, en 
 concordancia con su Política de Seguridad, establece los siguientes Objetivos
 como un compromiso con la seguridad en sus operaciones de consolidación de carga.`;
-content.integridadProcesos = `Mantener la integridad en cada uno de los proceso.`;
+content.satisfacerNecesidades = `Satisfacer las necesidades y epectativas de las
+partes interesadas segun su contexto organizacional a travéz de la prestación
+de un servicio con excelente calidad y seguridad en las operaciones de 
+de consolidación de carga`;
+content.prevencion = `Prevenir que se presenten novedades en el desarrollo de la
+operación relacionada con actividades ilícitas, lavado de activos, financiamiento
+del terrorismo, contrabando, conspiraciones internas, proliferación de armas,
+corrupción, soborno en la organización`;
+content.cultura = `Promover una cultura de prevencion de gestion de riesgo y
+mejora continua de todos los procesos de SGCS, mediante la generacion de espacios de
+participacin de todos los miembros de la organizacion.`;
+content.reaccionEficaz = `Reaccionar eficaz y profesionalmente ante novedades y
+siniestros, sean internos o en las organizaciones cliente, aplicando los metodos
+y correctivos necesarios para evitar su repetición.`;
 
 
 export {content}

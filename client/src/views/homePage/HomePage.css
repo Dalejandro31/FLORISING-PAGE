@@ -18,7 +18,8 @@
   }
 
 .nuestra-empresa{
-    display: flex
+    display: flex;
+    margin-top: var(--spacer-5-contenido);
 }
 .contenido{
     display: flex;
@@ -73,6 +74,7 @@
     align-items: center;
     justify-content: center;
     padding-right: var(--spacer-5-contenido);
+    padding-left: var(--spacer-5-contenido);
     padding-top: var(--spacer-4-contenido);
 }
 .infraestructura div{

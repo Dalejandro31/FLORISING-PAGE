@@ -45,23 +45,28 @@
       <section class="objetivos">
         <div class="contenido-objetivos">
           <h1>{{ content.tituloObjetivos }}</h1>
+          <div/>
+          <br>
+          <br>
           <p>{{ content.content5 }}</p>
         </div>
-        <div class="objetivos-items">
-          <img src="../../assets/servicios.png" alt="">
-          <p>{{ content.integridadProcesos }}</p>
-        </div>
-        <div class="objetivos-items">
-          <img src="../../assets/servicios.png" alt="">
-          <p>{{ content.integridadProcesos }}</p>
-        </div>
-        <div class="objetivos-items">
-          <img src="../../assets/servicios.png" alt="">
-          <p>{{ content.integridadProcesos }}</p>
-        </div>
-        <div class="objetivos-items">
-          <img src="../../assets/servicios.png" alt="">
-          <p>{{ content.integridadProcesos }}</p>
+        <div class="contenedor-objetivos-items">
+          <div class="objetivos-items">
+            <img src="../../assets/servicios.png" alt="">
+            <p>{{ content.satisfacerNecesidades }}</p>
+          </div>
+          <div class="objetivos-items">
+            <img src="../../assets/prevencion.png" alt="">
+            <p>{{ content.prevencion }}</p>
+          </div>
+          <div class="objetivos-items">
+            <img src="../../assets/culturaParticipacion.png" alt="">
+            <p>{{ content.cultura }}</p>
+          </div>
+          <div class="objetivos-items">
+            <img src="../../assets/ReaccionEficaz.png" alt="">
+            <p>{{ content.reaccionEficaz }}</p>
+          </div>
         </div>
       </section>
     </div>

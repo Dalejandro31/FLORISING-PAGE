@@ -1,7 +1,7 @@
 <template>
     <nav class="NavBar">
         <div class="logo">
-            <p>FLORISING</p>
+            <img src="../../assets/logo_florising-removebg-preview.png" alt="Logo">
         </div>
         <div class="links">
             <button @click="redirigir('/')">INICIO</button>

@@ -23,7 +23,6 @@
     display: flex;
     justify-content: space-between;
     background-color: var(--primary-nav);
-    padding-left: 3%;
     padding-right: 3%;
     border-bottom: 4px solid var(--secondary-nav);
 }
@@ -31,7 +30,14 @@
 .logo{
     display: flex;
     align-items: center;
-    color: var(--gray-0-nav);
+    height: auto;
+    width: 13%;
+    overflow: hidden;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .links{
     display: flex;
