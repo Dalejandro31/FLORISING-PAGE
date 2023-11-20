@@ -1,21 +1,21 @@
 :root {
-    --gray-0:#646464;
-    --gray-1:#b2b6bd;
-    --primary: #f7f4f3;
-    --secondary: #fdc600;
-    --font-size-1: 1.5rem;
-    --font-size-2: 1.25rem;
-    --font-size-3: 1rem;
-    --font-weight-thin: 300;
-    --font-weight-bold: 600;
-    --font-weight-heavy: 800;
-    --spacer-1: .25rem;
-    --spacer-2: .5rem;
-    --spacer-3: 1rem;
-    --spacer-4: 1.5rem;
-    --spacer-5: 2.0rem;
-    --spacer-6: 7rem;
-    --shadows: 7px 7px 7px rgba(0, 0, 0, 0.473);
+    --gray-0-servicios:#646464;
+    --gray-1-servicios:#b2b6bd;
+    --primary-servicios: #f7f4f3;
+    --secondary-servicios: #fdc600;
+    --font-size-1-servicios: 1.5rem;
+    --font-size-2-servicios: 1.25rem;
+    --font-size-3-servicios: 1rem;
+    --font-weight-thin-servicios: 300;
+    --font-weight-bold-servicios: 600;
+    --font-weight-heavy-servicios: 800;
+    --spacer-1-servicios: .25rem;
+    --spacer-2-servicios: .5rem;
+    --spacer-3-servicios: 1rem;
+    --spacer-4-servicios: 1.5rem;
+    --spacer-5-servicios: 2.0rem;
+    --spacer-6-servicios: 7rem;
+    --shadows-servicios: 7px 7px 7px rgba(0, 0, 0, 0.473);
   }
 
 .nuestro-servicio{
@@ -27,22 +27,22 @@
     text-align: justify;
     height: auto;
     width: 100%;
-    padding: var(--spacer-5);
-    color: var(--gray-0);
+    padding: var(--spacer-5-servicios);
+    color: var(--gray-0-servicios);
 }
 
 .contenido p{
-    margin: 0 0 var(--spacer-3);
+    margin: 0 0 var(--spacer-3-servicios);
     line-height: 1.5;
     word-wrap: break-word;
-    font-size: var(--font-size-2);
-    font-weight: var(--font-weight-thin);
+    font-size: var(--font-size-2-servicios);
+    font-weight: var(--font-weight-thin-servicios);
 }
 
 .contenido div{
     width: 500px;
     height: 4px; 
-    background-color: var(--secondary);
+    background-color: var(--secondary-servicios);
     margin-top: 5px; 
     border-radius: 1rem;
 }
@@ -52,8 +52,8 @@
     width: 100%;
     align-items: center;
     justify-content: top;
-    padding-right: var(--spacer-5);
-    padding-top: var(--spacer-4);
+    padding-right: var(--spacer-5-servicios);
+    padding-top: var(--spacer-4-servicios);
 }
 .recepcion-frio div{
     width: auto;
@@ -70,9 +70,9 @@
     width: 100%;
     height: 70%;
     border-radius: 15px;
-    margin-right: var(--spacer-2);
-    box-shadow: var(--shadows);
-    border: solid 1px var(--gray-0) ;
+    margin-right: var(--spacer-2-servicios);
+    box-shadow: var(--shadows-servicios);
+    border: solid 1px var(--gray-0-servicios) ;
 }
 .nuestro-servicio{
     display: grid;
@@ -85,7 +85,7 @@
 }
 
 .separ{
-    background-color: var(--secondary);
+    background-color: var(--secondary-servicios);
     height: 3px;
     margin-left: 15%;
     margin-right: 15%;
@@ -96,7 +96,7 @@
     
 }
 .separ-top{
-    background-color: var(--secondary);
+    background-color: var(--secondary-servicios);
     height: 3px;
     margin-left: 15%;
     margin-right: 15%;
@@ -107,27 +107,47 @@
 }
 
 [name="titulo"]{
-    font-weight: var(--font-weight-heavy);
-    font-size: var(--font-size-2);
-    color: var(--gray-0);
+    font-weight: var(--font-weight-heavy-servicios);
+    font-size: var(--font-size-2-servicios);
+    color: var(--gray-0-servicios);
     margin-bottom: 2rem;
 }
 
 [name="contenido"]{
-    margin: 0 0 var(--spacer-3);
+    margin: 0 0 var(--spacer-3-servicios);
     line-height: 1.5;
     word-wrap: break-word;
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-3);
-    color: var(--gray-0);
+    font-weight: var(--font-weight-bold-servicios);
+    font-size: var(--font-size-3-servicios);
+    color: var(--gray-0-servicios);
 }
 
 .titulo{
-    background-color: var(--gray-0);
+    background-color: var(--gray-0-servicios);
     height: 90px;
     text-align: center;
     color: white;
     padding-top: 25px;
+}
+
+.ejemplo{
+    background: var(--secondary-servicios);
+    width: 50%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacer-1-servicios);
+    position: relative;
+}
+
+.ejemplo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 44px solid white;
+    border-left: 50px solid var(--secondary-servicios) ;
 }
 
 

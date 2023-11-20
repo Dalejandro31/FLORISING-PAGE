@@ -3,16 +3,22 @@
         <h1 class="titulo"> SERVICIOS </h1>
     </div>
     <div class="separ-top"/>
-    <section class="nuestro-servicio"> // se le añade un display felx colum 
+
+    <section class="nuestro-servicio"> 
+        <!-- // se le añade un display felx colum 
         //div -> titulo
-        //div -> div -> img : div -> texto
+        //div -> div -> img : div -> texto -->
+        
+        <div class = "ejemplo">
+            <p>{{ content.title1 }}</p>
+        </div>
+
         <div class="imagenes">
             <div>
                 <carrusel :slides="slidesRecepcion" :interval="5000" controls indicators =""/>
             </div>
         </div>
         <div class="contenido">
-            <h1>{{ content.title1 }}</h1>
             <div/>
             <br>
             <br>
