@@ -7,7 +7,7 @@
             <button @click="redirigir('/')">INICIO</button>
             <button @click="redirigir('/servicios')">SERVICIOS</button>
             <button @click="redirigir('/nosotros')">SOBRE NOSOTROS</button>
-            <button >CONTACTANOS</button>
+            <button @click="$event => redirigir('/contactanos')">CONTACTANOS</button>
         </div>
     </nav>
 </template>
