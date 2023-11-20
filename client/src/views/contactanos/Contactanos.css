@@ -1,21 +1,21 @@
 :root {
-    --gray-0:#646464;
-    --gray-1:#b2b6bd;
-    --primary: #f7f4f3;
-    --secondary: #fdc600;
-    --font-size-1: 1.5rem;
-    --font-size-2: 1.25rem;
-    --font-size-3: 1rem;
-    --font-weight-thin: 300;
-    --font-weight-bold: 600;
-    --font-weight-heavy: 800;
-    --spacer-1: .25rem;
-    --spacer-2: .5rem;
-    --spacer-3: 1rem;
-    --spacer-4: 1.5rem;
-    --spacer-5: 2.0rem;
-    --spacer-6: 7rem;
-    --shadows: 7px 7px 7px rgba(0, 0, 0, 0.473);
+    --gray-0-contactanos:#646464;
+    --gray-1-contactanos:#b2b6bd;
+    --primary-contactanos: #f7f4f3;
+    --secondary-contactanos: #fdc600;
+    --font-size-1-contactanos: 1.5rem;
+    --font-size-2-contactanos: 1.25rem;
+    --font-size-3-contactanos: 1rem;
+    --font-weight-thin-contactanos: 300;
+    --font-weight-bold-contactanos: 600;
+    --font-weight-heavy-contactanos: 800;
+    --spacer-1-contactanos: .25rem;
+    --spacer-2-contactanos: .5rem;
+    --spacer-3-contactanos: 1rem;
+    --spacer-4-contactanos: 1.5rem;
+    --spacer-5-contactanos: 2.0rem;
+    --spacer-6-contactanos: 7rem;
+    --shadows-contactanos: 7px 7px 7px rgba(0, 0, 0, 0.473);
   }
   
   .contactanos{
@@ -34,21 +34,21 @@
     text-align: justify;
     height: auto;
     width: 100%;
-    padding: var(--spacer-1);
-    color: var(--gray-0);
+    padding: var(--spacer-1-contactanos);
+    color: var(--gray-0-contactanos);
 }
 .contenido p{
-    margin: 0 0 var(--spacer-3);
+    margin: 0 0 var(--spacer-3-contactanos);
     line-height: 1.5;
     word-wrap: break-word;
-    font-size: var(--font-size-2);
-    font-weight: var(--font-weight-thin);
+    font-size: var(--font-size-2-contactanos);
+    font-weight: var(--font-weight-thin-contactanos);
     color: black;
 }
 .contenido div{
     width: 500px;
     height: 4px; 
-    background-color: var(--secondary);
+    background-color: var(--secondary-contactanos);
     margin-top: 5px; 
     border-radius: 1rem;
     
@@ -73,18 +73,18 @@
   .info{
     display: grid;
     grid-template-columns: 20% 80%;
-    background-color: var(--gray-1);
+    background-color: var(--gray-1-contactanos);
     align-items: center;
     padding: 3px;
     padding-left: 10px;
     border-radius: 10px;
-    box-shadow: var(--shadows);
+    box-shadow: var(--shadows-contactanos);
   }
   .info img {
     width: 85%;
   }
   .titulo{
-    background-color: var(--gray-0);
+    background-color: var(--gray-0-contactanos);
     height: 90px;
     text-align: center;
     color: white;

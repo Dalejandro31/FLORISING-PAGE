@@ -27,7 +27,8 @@
     text-align: justify;
     height: auto;
     width: 50%;
-    padding: var(--spacer-5-contenido);
+    margin-left: var(--spacer-5-contenido);
+    margin-right: var(--spacer-5-contenido);
     color: var(--gray-0-contenido);
     
 }
@@ -74,7 +75,6 @@
     align-items: center;
     justify-content: center;
     padding-right: var(--spacer-5-contenido);
-    padding-left: var(--spacer-5-contenido);
     padding-top: var(--spacer-4-contenido);
 }
 .infraestructura div{
