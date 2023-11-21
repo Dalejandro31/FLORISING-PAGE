@@ -16,10 +16,15 @@ const routes = [
     component: Servicios
   },
   {
-    path: '/nosotros',
-    name: 'Nosotros',
+    path: '/nosotros-FLORISING-COMMERCIAL-&-LOGISTICS-GROUP',
+    name: 'Nosotros-Consolidacion',
     component: Nosotros
   },
+  // {
+  //   path: '/nosotros-FLORISING-CLG-SAS',
+  //   name: 'Nosotros-Consolidacion',
+  //   component: Nosotros
+  // },
   {
     path: '/contactanos',
     name: 'Contactanos',

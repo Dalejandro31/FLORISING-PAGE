@@ -6,7 +6,13 @@
         <div class="links">
             <button @click="redirigir('/')">INICIO</button>
             <button @click="redirigir('/servicios')">SERVICIOS</button>
-            <button @click="redirigir('/nosotros')">SOBRE NOSOTROS</button>
+            <div class="desplegable">
+                <button>SOBRE NOSOTROS</button>
+                <div class="links-menu">
+                    <a @click="redirigir('/nosotros-FLORISING-COMMERCIAL-&-LOGISTICS-GROUP')">FLORISING COMMERCIAL & LOGISTICS GROUP</a>
+                    <a @click="redirigir('/nosotros-FLORISING-CLG-SAS')">FLORISING CLG SAS</a>
+                </div>
+            </div>
             <button @click="$event => redirigir('/contactanos')">CONTACTANOS</button>
         </div>
     </nav>

@@ -63,3 +63,26 @@
     border: none;
     cursor: pointer;
 }
+.links-menu a{
+    text-decoration: none;
+    color: var(--gray-0-nav);
+    display: block;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.links-menu{
+    background-color: var(--primary-nav);
+    width: 180px;
+    display: none;
+    border-radius: 10px;
+}
+.links-menu a:hover{
+    background-color: var(--secondary-nav);
+    cursor: pointer;
+}
+.desplegable:hover .links-menu{
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
