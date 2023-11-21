@@ -52,23 +52,80 @@
         </div>
         <div class="contenedor-objetivos-items">
           <div class="objetivos-items">
-            <img src="../../assets/servicios.png" alt="">
-            <p>{{ content.satisfacerNecesidades }}</p>
+            <img src="../../assets/servicios.png" alt="" class="imgObtetivos-items">
+            <div class="contenido-objetivos-items">
+              <p>{{ content.satisfacerNecesidades }}</p>
+            </div>
           </div>
           <div class="objetivos-items">
-            <img src="../../assets/prevencion.png" alt="">
-            <p>{{ content.prevencion }}</p>
+            <img src="../../assets/prevencion.png" alt="" class="imgObtetivos-items">
+            <div class="contenido-objetivos-items">
+              <p>{{ content.prevencion }}</p>
+            </div>
           </div>
           <div class="objetivos-items">
-            <img src="../../assets/culturaParticipacion.png" alt="">
-            <p>{{ content.cultura }}</p>
+            <img src="../../assets/culturaParticipacion.png" alt="" class="imgObtetivos-items">
+            <div class="contenido-objetivos-items">
+              <p>{{ content.cultura }}</p>
+            </div>
           </div>
           <div class="objetivos-items">
-            <img src="../../assets/ReaccionEficaz.png" alt="">
-            <p>{{ content.reaccionEficaz }}</p>
+            <img src="../../assets/ReaccionEficaz.png" alt="" class="imgObtetivos-items">
+            <div class="contenido-objetivos-items">
+              <p>{{ content.reaccionEficaz }}</p>
+            </div>
           </div>
         </div>
       </section>
+
+      <section class="objetivos">
+        <div class="contenido-objetivos">
+          <h1>{{ content.tituloPoliticas }}</h1>
+          <div/>
+          <br>
+          <br>
+          <p>{{ content.content6 }}</p>
+        </div>
+        <div class="contenedor-politicas-items">
+          <div class="politicas-items">
+            <div class="contenido-politicas-items">
+              <div class="punto-derecha"/>
+              <div class="punto-izquierda"/>
+              <p>{{ content.MantenerIntegridad }}</p>
+            </div>
+          </div>
+          <div class="politicas-items">
+            <div class="contenido-politicas-items">
+              <div class="punto-derecha"/>
+              <div class="punto-izquierda"/>
+              <p>{{ content.prevencionActividades }}</p>
+            </div>
+          </div>
+          <div class="politicas-items">
+            <div class="contenido-politicas-items">
+              <div class="punto-derecha"/>
+              <div class="punto-izquierda"/>
+              <p>{{ content.CumplirRequisitos }}</p>
+            </div>
+          </div>
+          <div class="politicas-items">
+            <div class="contenido-politicas-items">
+              <div class="punto-derecha"/>
+              <div class="punto-izquierda"/>
+              <p>{{ content.MejoraContinua }}</p>
+            </div>
+          </div>
+          <div class="politicas-items">
+            <div class="contenido-politicas-items">
+              <div class="punto-derecha"/>
+              <div class="punto-izquierda"/>
+              <p>{{ content.ProtegerColaboradores }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </div>
   </template>
 

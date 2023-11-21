@@ -61,5 +61,18 @@ content.reaccionEficaz = `Reaccionar eficaz y profesionalmente ante novedades y
 siniestros, sean internos o en las organizaciones cliente, aplicando los metodos
 y correctivos necesarios para evitar su repetición.`;
 
+content.tituloPoliticas = `POLITICA DE GESTION EN CONTROL Y SEGURTIDAD`;
+content.content6 = `Florising Commercial & Logistics Group S.A.S, haciendo parte
+de la cadena de suministro, presta sus servicios de consolidación de carga, se destaca
+por su firme compromiso de satisfacer las expectativas de sus clintes, esta comprometida Con:`;
+content.MantenerIntegridad = `Mantener la integridad den cada uno de sus procesos`;
+content.prevencionActividades = `Prevenir las actividades ilicitas en cada uno de estos,
+asi como prevenir la corrupcion y el soborno.`;
+content.CumplirRequisitos = `Cumplir los requisitos legales aplicable y todos aquellos
+que la organización suscriba.`;
+content.MejoraContinua = `Mejorar continuamente el Sistema de Gestion en control
+y Seguridad SGSS BASC.`;
+content.ProtegerColaboradores = `Proteger a sus colaboradores, instalaciones, la carga,
+a los asociados de negocio y demas partes interesadas que interactuan como la organizacion.`;
 
 export {content}
