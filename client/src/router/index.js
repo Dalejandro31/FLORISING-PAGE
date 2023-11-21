@@ -12,8 +12,8 @@ const routes = [
     component: HomePage
   },
   {
-    path: '/servicios',
-    name: 'Servicios',
+    path: '/servicios-Centro-Consolidacion',
+    name: 'Servicios-Consolidacion',
     component: Servicios
   },
   {
@@ -22,8 +22,8 @@ const routes = [
     component: Nosotros
   },
   {
-    path: '/productos',
-    name: 'Productos',
+    path: '/productos-Floristeria',
+    name: 'Productos-Floristeria',
     component: Productos
   },
   // {
