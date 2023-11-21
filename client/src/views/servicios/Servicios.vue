@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="titulo"> SERVICIOS </h1>
+        <h1 class="titulo-servicios"> SERVICIOS DE CONSOLIDACIÓN </h1>
     </div>
 
     <section> 
@@ -83,9 +83,9 @@
 </template>
 
 <script>
-import Carrusel from '@/components/carrusel/Carrusel.vue'
-  import {content} from '@/views/servicios/Servicios'
-  export default {
+    import Carrusel from '@/components/carrusel/Carrusel.vue'
+    import {content} from '@/views/servicios/Servicios'
+    export default {
     name: 'Servicios',
     components: {
       Carrusel
