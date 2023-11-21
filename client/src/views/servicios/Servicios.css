@@ -63,8 +63,8 @@
     grid-template-columns:repeat(2, 1fr);
     grid-gap: 2%;
     justify-content: left;
-    margin-left: 2% ;
-    margin-right: 3%;
+    margin-left: 8% ;
+    margin-right: 8%;
     margin-top: 3rem;
     margin-bottom: 3rem;
     position: relative;
@@ -108,7 +108,7 @@
     color: var(--gray-0-servicios);
 }
 
-.titulo{
+.titulo-servicios{
     background-color: var(--gray-0-servicios);
     height: 90px;
     text-align: center;
@@ -118,14 +118,14 @@
 
 .titulo-izquierda{
     background: var(--secondary-servicios);
-    width: 70%;
+    width: 55%;
     height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: var(--spacer-1-servicios);
     position: relative;
-    margin-left: 2%;
+    margin-left: 8%;
     margin-right: 7%;
     font-size: var(--font-size-2-servicios);
     word-wrap: break-word;
@@ -144,14 +144,14 @@
 }
 .titulo-derecha{
     background: var(--secondary-servicios);
-    width: 70%;
+    width: 55%;
     height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: var(--spacer-1-servicios);
     position: relative;
-    margin-left: 27%;
+    margin-left: 37%;
     margin-right: 7%;
     font-size: var(--font-size-2-servicios);
     word-wrap: break-word;
