@@ -105,6 +105,13 @@
             <div class="contenido-politicas-items">
               <div class="punto-derecha"/>
               <div class="punto-izquierda"/>
+              <p>{{ content.ProtegerColaboradores }}</p>
+            </div>
+          </div>
+          <div class="politicas-items">
+            <div class="contenido-politicas-items">
+              <div class="punto-derecha"/>
+              <div class="punto-izquierda"/>
               <p>{{ content.CumplirRequisitos }}</p>
             </div>
           </div>
@@ -113,13 +120,6 @@
               <div class="punto-derecha"/>
               <div class="punto-izquierda"/>
               <p>{{ content.MejoraContinua }}</p>
-            </div>
-          </div>
-          <div class="politicas-items">
-            <div class="contenido-politicas-items">
-              <div class="punto-derecha"/>
-              <div class="punto-izquierda"/>
-              <p>{{ content.ProtegerColaboradores }}</p>
             </div>
           </div>
         </div>
