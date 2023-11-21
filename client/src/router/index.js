@@ -4,6 +4,7 @@ import Nosotros from '../views/nosotros/Nosotros.vue'
 import Servicios from '../views/servicios/Servicios.vue'
 import Productos from '../views/productos/Productos.vue'
 import Contactanos from '../views/contactanos/Contactanos.vue'
+import NosotrosClsSas from '../views/nosotrosFlorisingClgSas/NosotrosClgSas.vue'
 
 const routes = [
   {
@@ -26,11 +27,11 @@ const routes = [
     name: 'Productos',
     component: Productos
   },
-  // {
-  //   path: '/nosotros-FLORISING-CLG-SAS',
-  //   name: 'Nosotros-Consolidacion',
-  //   component: Nosotros
-  // },
+  {
+    path: '/nosotros-FLORISING-CLG-SAS',
+    name: 'Nosotros-Cls-Sas',
+    component: NosotrosClsSas
+  },
   {
     path: '/contactanos',
     name: 'Contactanos',
