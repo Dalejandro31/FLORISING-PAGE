@@ -17,7 +17,7 @@
     <div>
         <div class="info">
             <img src="../../assets/ubicacion.png" alt="">
-            <div class="contenido">
+            <div class="contenido-cont">
                 <p>{{ content.ubicacion }}</p>
                 <p>{{ content.ubicacion2 }}</p>
             </div>
@@ -26,7 +26,7 @@
     <div>
         <div class="info">
             <img src="../../assets/email.png" alt="">
-            <div class="contenido">
+            <div class="contenido-cont">
                 <p>{{ content.email }}</p>
                 <p>{{ content.email2 }}</p>
             </div>
@@ -35,7 +35,7 @@
     <div>
         <div class="info">
             <img src="../../assets/telefono.png" alt="">
-            <div class="contenido">
+            <div class="contenido-cont">
                 <p>{{ content.telefono }}</p>
                 <p>{{ content.telefono2 }}</p>
             </div>

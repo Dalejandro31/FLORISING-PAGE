@@ -2,77 +2,81 @@
     <div>
         <h1 class="titulo"> SERVICIOS </h1>
     </div>
-    <div class="separ-top"/>
 
-    <section class="nuestro-servicio"> 
+    <section> 
         <!-- // se le añade un display felx colum 
         //div -> titulo
         //div -> div -> img : div -> texto -->
-        
-        <div class = "ejemplo">
+        <br>
+        <div class = "titulo-izquierda">
             <p>{{ content.title1 }}</p>
         </div>
-
-        <div class="imagenes">
-            <div>
+        <div class="nuestro-servicio">
+            <div class="imagenes">
                 <carrusel :slides="slidesRecepcion" :interval="5000" controls indicators =""/>
             </div>
-        </div>
-        <div class="contenido">
-            <div/>
-            <br>
-            <br>
-            <p>{{ content.recepcionfrio1 }}</p>
-            <p>{{ content.recepcionfrio2 }}</p>
-            <p>{{ content.recepcionfrio3 }}</p>
-            <p>{{ content.recepcionfrio4 }}</p>
-        </div>
-    </section>
-    <div class="separ"/>
-    <section class="nuestro-servicio">
-        <div class="contenido">
-            <h1>{{content.title2}}</h1>
-            <div />
-            <br>
-            <br>
-            <p>{{ content.almacenamientoFrio }}</p>
-            <p>{{ content.almacenamientoFrio2 }}</p>
-        </div>
-        <div class="imagenes">
-            <div >
-                <carrusel :slides="slidesCuartosFrios" :interval="5000" controls indicators =""/>
-
+            <div class="contenido-der">
+                <br>
+                <br>
+                <p>{{ content.recepcionfrio1 }}</p>
+                <p>{{ content.recepcionfrio2 }}</p>
+                <p>{{ content.recepcionfrio3 }}</p>
+                <p>{{ content.recepcionfrio4 }}</p>
             </div>
         </div>
     </section>
     <div class="separ"/>
-    <section class="nuestro-servicio">
-        <div class="imagenes">
-            <div>
+    <section>
+        <br>
+        <div class="titulo-derecha">
+            <p>{{ content.title2 }}</p>
+        </div>
+        <div class="nuestro-servicio">
+            <div class="contenido-izq">
+                <br>
+                <br>
+                <p>{{ content.almacenamientoFrio }}</p>
+                <p>{{ content.almacenamientoFrio2 }}</p>
+            </div>
+            <div class="imagenes">
+                <carrusel :slides="slidesCuartosFrios" :interval="5000" controls indicators =""/>
+            </div>
+        </div>
+        
+        
+    </section>
+    <div class="separ"/>
+    <section>
+
+        <br>
+        <div class="titulo-izquierda">
+            <p>{{ content.title3 }}</p>
+        </div>
+        <div class="nuestro-servicio">
+            <div class="imagenes">
                 <carrusel :slides="slidesTransportes" :interval="5000" controls indicators =""/>
             </div>
-        </div>
-        <div class="contenido">
-            <h1>{{ content.title3 }}</h1>
-            <div/>
-            <br>
-            <br>
-            <p>{{ content.transporteRefrigerado }}</p>
+            <div class="contenido-der">
+                <br>
+                <br>
+                <p>{{ content.transporteRefrigerado }}</p>
+            </div>
         </div>
     </section>
     <div class="separ"/>
-    <section class="nuestro-servicio">
-        <div class="contenido">
-            <h1>{{ content.title4 }}</h1>
-            <div />
-            <br>
-            <br>
-            <p>{{ content.otros }}</p>
+    <section>
+        <br>
+        <div class="titulo-derecha">
+            <p>{{ content.title4 }}</p>
         </div>
-        <div class="imagenes">
-            <div>
-                <carrusel :slides="slidesOtros" :interval="5000" controls indicators =""/>
-
+        <div class="nuestro-servicio">
+            <div class="contenido-izq">
+                <br>
+                <br>
+                <p>{{ content.otros }}</p>
+            </div>
+            <div class="imagenes">
+                    <carrusel :slides="slidesOtros" :interval="5000" controls indicators =""/>
             </div>
         </div>
     </section>
