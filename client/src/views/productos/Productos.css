@@ -1,0 +1,165 @@
+:root {
+    --gray-0-productos:#646464;
+    --gray-1-productos:#b2b6bd;
+    --primary-productos: #f7f4f3;
+    --secondary-productos: #fdc600;
+    --font-size-1-productos: 1.5rem;
+    --font-size-2-productos: 1.25rem;
+    --font-size-3-productos: 1rem;
+    --font-weight-thin-productos: 300;
+    --font-weight-bold-productos: 600;
+    --font-weight-heavy-productos: 800;
+    --spacer-1-productos: .25rem;
+    --spacer-2-productos: .5rem;
+    --spacer-3-productos: 1rem;
+    --spacer-4-productos: 1.5rem;
+    --spacer-5-productos: 2.0rem;
+    --spacer-6-productos: 7rem;
+    --shadows-productos: 7px 7px 7px rgba(0, 0, 0, 0.473);
+  }
+  .nuestro-producto-verde{
+    display: flex;
+  }
+
+  .nuestro-producto-verde{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  .nuestro-producto-verde div{
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+  }
+  .contenido-verde{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacer-1-productos);
+  }
+  .contenido-verde p{
+    margin: 0 0 var(--spacer-3-productos);
+    line-height: 1.5;
+    word-wrap: break-word;
+    font-size: var(--font-size-2-productos);
+    font-weight: var(--font-weight-bold-productos);
+    color: black;
+  }
+  .contenido-verde div{
+    width: 500px;
+    height: 4px;
+    background-color: var(--secondary-productos);
+    margin-top: 5px;
+    border-radius: 1rem;
+  }
+  .imagen-verde{
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    text-align: center;
+    border: solid 4px var(--primary-productos);
+    box-shadow: var(--shadows-productos);
+
+  }
+  .imagen-verde img{
+    height: 400px;
+    width: 100%;
+    margin-bottom: 2%;
+    object-fit: fill;
+  }
+  .nuestro-producto-flor{
+    display: flex;
+  }
+  .nuestro-producto-flor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    
+  }
+  .nuestro-producto-flor div{
+    align-items: center;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+  }
+  .nuestro-producto-flor button{
+    width: 40%;
+    height: 50px;
+    margin-top: var(--spacer-4-productos);
+    background-color: var(--secondary-productos);
+    border: none;
+    color: var(--gray-0-productos);
+    font-size: var(--font-size-3-productos);
+    font-weight: var(--font-weight-bold-productos);
+    border-radius: .5rem;
+  }
+  .nuestro-producto-flor button:hover{
+    width: 40%;
+    height: 50px;
+    margin-top: var(--spacer-4-contenido);
+    background-color: var(--secondary-contenido);
+    border: none;
+    color: var(--primary-contenido);
+    cursor: pointer;
+    font-weight: var(--font-weight-heavy-contenido);
+  }
+  .contenido-flor{
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacer-1-productos);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 50%;
+    background-color: var(--primary-productos);
+    border: solid 3px var(--secondary-productos);
+  }
+  .contenido-flor p{
+    margin: 0 0 var(--spacer-1-productos);
+    line-height: 1.5;
+    word-wrap: break-word;
+    font-size: var(--font-size-2-productos);
+    font-weight: var(--font-weight-bold-productos);
+    color: black;
+    
+  }
+  .contenido-flor div{
+    width: 500px;
+    height: 4px;
+    background-color: var(--secondary-productos);
+    margin-top: 5px;
+    border-radius: 1rem;
+    
+  }
+  .imagen-flor {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    text-align: center;
+    border: solid 4px var(--primary-productos);
+    box-shadow: var(--shadows-productos);
+  }
+  .imagen-flor img{
+    height: 200px;
+    width: 100%;
+    margin-top: 2%;
+    object-fit: fill;
+  }
+  .titulo-productos{
+    background-color: var(--gray-0-servicios);
+    height: 90px;
+    text-align: center;
+    color: white;
+    padding-top: 25px;
+}
