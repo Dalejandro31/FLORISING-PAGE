@@ -5,7 +5,15 @@
         </div>
         <div class="links">
             <button @click="redirigir('/')">INICIO</button>
-            <button @click="redirigir('/servicios')">SERVICIOS</button>
+            
+            <div class="desplegable">
+                <button>SERVICIOS</button>
+                <div class="links-menu">
+                    <a @click=" redirigir('/servicios-Centro-Consolidacion')">CENTRO DE CONSOLIDACION</a>
+                    <a @click="redirigir('/servicios-Floristeria')">FLORISTERIA</a>
+                </div>
+            </div>
+            
             <div class="desplegable">
                 <button>SOBRE NOSOTROS</button>
                 <div class="links-menu">
