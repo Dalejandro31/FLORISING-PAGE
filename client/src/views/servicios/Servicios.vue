@@ -92,20 +92,20 @@
     },
     data:()=>({
         slidesRecepcion: [
-            require('@/assets/RecepcionyConsolidacionFrio.png'),
-            require('@/assets/MuellesCarga.png'),
-            require('@/assets/RecepciondeCarga.png'),
-            require('@/assets/RecepcionRayosX.png'),
+            require('@/assets/Servicios/RecepcionyConsolidacionFrio.png'),
+            require('@/assets/Servicios/MuellesCarga.png'),
+            require('@/assets/Servicios/RecepciondeCarga.png'),
+            require('@/assets/Servicios/RecepcionRayosX.png'),
         ],
         slidesCuartosFrios: [
-            require('@/assets/CuartosFrios.png'),
-            require('@/assets/barreraInternaCuartosFrios.jpg'),
+            require('@/assets/Servicios/CuartosFrios.png'),
+            require('@/assets/Servicios/barreraInternaCuartosFrios.jpg'),
         ],
         slidesTransportes: [
-            require('@/assets/contenedorRefrigerado.png'),
+            require('@/assets/Servicios/contenedorRefrigerado.png'),
         ],
         slidesOtros: [
-            require('@/assets/OtrosServicios1.png'),
+            require('@/assets/Servicios/OtrosServicios1.png'),
         ],
         content: content
     })

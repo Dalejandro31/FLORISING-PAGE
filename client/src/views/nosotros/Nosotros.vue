@@ -52,25 +52,25 @@
         </div>
         <div class="contenedor-objetivos-items">
           <div class="objetivos-items">
-            <img src="../../assets/servicios.png" alt="" class="imgObtetivos-items">
+            <img src="../../assets/Nosotros/servicios.png" alt="" class="imgObtetivos-items">
             <div class="contenido-objetivos-items">
               <p>{{ content.satisfacerNecesidades }}</p>
             </div>
           </div>
           <div class="objetivos-items">
-            <img src="../../assets/prevencion.png" alt="" class="imgObtetivos-items">
+            <img src="../../assets/Nosotros/prevencion.png" alt="" class="imgObtetivos-items">
             <div class="contenido-objetivos-items">
               <p>{{ content.prevencion }}</p>
             </div>
           </div>
           <div class="objetivos-items">
-            <img src="../../assets/culturaParticipacion.png" alt="" class="imgObtetivos-items">
+            <img src="../../assets/Nosotros/culturaParticipacion.png" alt="" class="imgObtetivos-items">
             <div class="contenido-objetivos-items">
               <p>{{ content.cultura }}</p>
             </div>
           </div>
           <div class="objetivos-items">
-            <img src="../../assets/ReaccionEficaz.png" alt="" class="imgObtetivos-items">
+            <img src="../../assets/Nosotros/ReaccionEficaz.png" alt="" class="imgObtetivos-items">
             <div class="contenido-objetivos-items">
               <p>{{ content.reaccionEficaz }}</p>
             </div>
