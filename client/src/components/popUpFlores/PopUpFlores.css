@@ -1,0 +1,134 @@
+:root {
+    --gray-0-popUp:#646464;
+    --primary-popUp: #f7f4f3;
+    --gray-1-popUp:#b2b6bd;
+    --secondary-popUp: #fdc600;
+    --font-size-1-popUp: 1.5rem;
+    --font-size-2-popUp: 1.25rem;
+    --font-size-3-popUp: 1rem;
+    --font-weight-thin-popUp: 300;
+    --font-weight-bold-popUp: 600;
+    --font-weight-heavy-popUp: 800;
+    --spacer-1-popUp: .25rem;
+    --spacer-2-popUp: .5rem;
+    --spacer-3-popUp: 1rem;
+    --spacer-4-popUp: 1.5rem;
+    --spacer-5-popUp: 2rem;
+    --shadows-popUp: 7px 7px 7px rgba(0, 0, 0, .15);
+  }
+  
+  .pop-up{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 32px 16px 120px;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow-y: auto;
+  }
+  .pop-up-close{
+    position: absolute;
+    height: 52px;
+    width: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    color: var(--gray-0-popUp);
+  }
+  .pop-up-close:hover{
+    color: var(--secondary-popUp);
+    cursor: pointer;
+  }
+  .pop-up-inner{
+    position: relative;
+    width: 65%;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: var(--shadows-popUp);
+    transition: all 250ms ease-in-out;
+  }
+
+  .nuestro-producto-flor-pop-up{
+    display: flex;
+  }
+  .nuestro-producto-flor-pop-up{
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-left: 15px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    
+  }
+  .nuestro-producto-flor-pop-up div{
+    align-items: center;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+  }
+  .nuestro-producto-flor-pop-up button{
+    width: 40%;
+    height: 50px;
+    margin-top: var(--spacer-4-productos);
+    background-color: var(--secondary-productos);
+    border: none;
+    color: var(--gray-0-productos);
+    font-size: var(--font-size-3-productos);
+    font-weight: var(--font-weight-bold-productos);
+    border-radius: .5rem;
+  }
+  .nuestro-producto-flor-pop-up button:hover{
+    width: 40%;
+    height: 50px;
+    margin-top: var(--spacer-4-contenido);
+    background-color: var(--secondary-contenido);
+    border: none;
+    color: var(--primary-contenido);
+    cursor: pointer;
+    font-weight: var(--font-weight-heavy-contenido);
+  }
+  .imagen-flor-pop-up {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    text-align: center;
+    border: solid 4px var(--primary-productos);
+    box-shadow: var(--shadows-productos);
+  }
+  .imagen-flor-pop-up img{
+    height: 200px;
+    width: 100%;
+    margin-top: 2%;
+    object-fit: fill;
+  }
+
+  .fade-enter, .fade-leave-to{
+    opacity: 0;
+
+    .pop-up-inner{
+        opacity: 0;
+        transform: translateY(-32px);
+    }
+  }
+  .fade-enter-active, .fade-leave-active{
+    transition: all 250ms ease-in-out;
+  }
+  .fade-leave-active{
+    transition-delay: 250ms;
+  }
+  .titulo-flores{
+    background-color: var(--gray-0-servicios);
+    height: 90px;
+    text-align: center;
+    color: white;
+    padding-top: 25px;
+  }

@@ -10,7 +10,7 @@
                 <button>SERVICIOS</button>
                 <div class="links-menu">
                     <a @click=" redirigir('/servicios-Centro-Consolidacion')">CENTRO DE CONSOLIDACION</a>
-                    <a @click="redirigir('/productos-Floristeria')">FLORISTERIA</a>
+                    <a @click="redirigir('/servicios-Floristeria')">FLORISTERIA</a>
                 </div>
             </div>
             

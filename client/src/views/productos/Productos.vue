@@ -11,7 +11,7 @@
         <div class="nuestro-producto-verde">
             <div>
                 <div class="imagen-verde">
-                    <img src="../../assets/Ruscus-removebg-preview.png" alt="">
+                    <img src="../../assets/Prod-Verde/Ruscus-removebg-preview.png" alt="">
                 </div>
                 <div class="contenido-verde">
                     <p>{{ content.verde1 }}</p>
@@ -20,7 +20,7 @@
             
             <div>
                 <div class="imagen-verde">
-                    <img src="../../assets/helecho-removebg-preview.png" alt="">
+                    <img src="../../assets/Prod-Verde/helecho-removebg-preview.png" alt="">
                 </div>
                 <div class="contenido-verde">
                     <p>{{ content.verde2 }}</p>
@@ -28,7 +28,7 @@
             </div>
             <div>
                 <div class="imagen-verde">
-                    <img src="../../assets/cocculus-removebg-preview.png" alt="">
+                    <img src="../../assets/Prod-Verde/cocculus-removebg-preview.png" alt="">
                 </div>
                 <div class="contenido-verde">
                     <p>{{ content.verde3 }}</p>
@@ -36,7 +36,7 @@
             </div>
             <div>
                 <div class="imagen-verde">
-                    <img src="../../assets/lily_grass-removebg-preview.png" alt="">
+                    <img src="../../assets/Prod-Verde/lily_grass-removebg-preview.png" alt="">
                 </div>
                 <div class="contenido-verde">
                     <p>{{ content.verde4 }}</p>
@@ -53,7 +53,7 @@
         <div class="nuestro-producto-flor">
             <div>
                 <div class="imagen-flor">
-                    <img src="../../assets/rosa- vendela.jpg" alt="">
+                    <img src="../../assets/Rosas/rosa-vendela.png" alt="">
                 </div>
                 <br>
                 <div class="contenido-flor">
@@ -62,7 +62,7 @@
             </div>
             <div>
                 <div class="imagen-flor">
-                    <img src="../../assets/rosa-gold strike.jpg" alt="">
+                    <img src="../../assets/Rosas/rosa-gold-strike.png" alt="">
                 </div>
                 <br>
                 <div class="contenido-flor">
@@ -71,7 +71,7 @@
             </div>
             <div>
                 <div class="imagen-flor">
-                    <img src="../../assets/rosa_-_connie-removebg-preview.png" alt="">
+                    <img src="../../assets/Rosas/rosa-connie.png" alt="">
                 </div>
                 <br>
                 <div class="contenido-flor">
@@ -80,7 +80,7 @@
             </div>
             <div>
                 <div class="imagen-flor">
-                    <img src="../../assets/rosa - freedom.jpg" alt="">
+                    <img src="../../assets/Rosas/rosa-freedom.png" alt="">
                 </div>
                 <br>
                 <div class="contenido-flor">
@@ -89,7 +89,7 @@
             </div>
             <div>
                 <div class="imagen-flor">
-                    <img src="../../assets/rosa-brighton.jpg" alt="">
+                    <img src="../../assets/Rosas/rosa-brighton.png" alt="">
                 </div>
                 <br>
                 <div class="contenido-flor">
@@ -98,7 +98,7 @@
             </div>
             <div>
                 <div class="imagen-flor">
-                    <img src="../../assets/rosa-orlando.jpg" alt="">
+                    <img src="../../assets/Rosas/rosa-orlando.png" alt="">
                 </div>
                 <br>
                 <div class="contenido-flor">
@@ -107,7 +107,7 @@
             </div>
             <div>
                 <div class="imagen-flor">
-                    <img src="../../assets/rosa- orange crush.jpg" alt="">
+                    <img src="../../assets/Rosas/rosa-orange-crush.png" alt="">
                 </div>
                 <br>
                 <div class="contenido-flor">
@@ -116,7 +116,7 @@
             </div>
             <div>
                 <div class="imagen-flor">
-                    <img src="../../assets/rosa- high magic.jpg" alt="">
+                    <img src="../../assets/Rosas/rosa-high-magic.png" alt="">
                 </div>
                 <br>
                 <div class="contenido-flor">
@@ -125,7 +125,7 @@
             </div>
             <div>
                 <div class="imagen-flor">
-                    <img src="../../assets/rosa-alex.jpg" alt="">
+                    <img src="../../assets/Rosas/rosa-alex.png" alt="">
                 </div>
                 <br>
                 <div class="contenido-flor">
@@ -134,20 +134,36 @@
             </div>
             <div/>
             <div>
-                <button>VER MAS</button>
+                <button @click="togglePopUp()">VER MAS</button>
             </div>
+
+            
+        </div>
+        
+        <div>
+            <Transition name="fade">
+                <PopUpFlores v-show="popUp" @close="togglePopUp()"/>
+            </Transition>
         </div>
     </section>
 </template>
 <script>
     import {content} from '@/views/productos/Productos'
+    import PopUpFlores from '@/components/popUpFlores/PopUpFlores.vue';
     export default{
         name: 'Productos',
         components:{
+            PopUpFlores
         },
         data:()=>({
+            popUp: false,
             content: content
-        })
+        }),
+        methods:{
+            togglePopUp(){
+                this.popUp = !this.popUp;
+            }
+        }
 
     }
 </script>

@@ -22,8 +22,8 @@ const routes = [
     component: Nosotros
   },
   {
-    path: '/productos-Floristeria',
-    name: 'Productos-Floristeria',
+    path: '/servicios-Floristeria',
+    name: 'servicios-Floristeria',
     component: Productos
   },
   // {
