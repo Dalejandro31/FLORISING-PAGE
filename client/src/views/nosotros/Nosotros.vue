@@ -42,7 +42,7 @@
         </div>
       </section>
 
-      <section class="objetivos">
+      <section class="objetivos-Consolidacion">
         <div class="contenido-objetivos">
           <h1>{{ content.tituloObjetivos }}</h1>
           <div/>
@@ -78,7 +78,7 @@
         </div>
       </section>
 
-      <section class="objetivos">
+      <section class="objetivos-Consolidacion">
         <div class="contenido-objetivos">
           <h1>{{ content.tituloPoliticas }}</h1>
           <div/>
