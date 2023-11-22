@@ -124,6 +124,7 @@
     padding-top: 50%;
     background-color: var(--primary-productos);
     border: solid 3px var(--secondary-productos);
+    box-shadow: var(--shadows-productos);
   }
   .contenido-flor p{
     margin: 0 0 var(--spacer-1-productos);

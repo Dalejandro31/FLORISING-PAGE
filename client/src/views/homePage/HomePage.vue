@@ -31,7 +31,7 @@
       </div>
       
       <div class="card-servicios">
-        <img src="../../assets/barreraInternaCuartosFrios.jpg" alt="cuartosFrios">
+        <img src="../../assets/Servicios/barreraInternaCuartosFrios.jpg" alt="cuartosFrios">
         <p name="titulo">{{ content.title3 }}</p>
         <p name="contenido">{{ content.content4 }}</p>
         <button>
@@ -62,7 +62,7 @@
     data:() => ({
       slides: [
         require('@/assets/fachada.png'),
-        require('@/assets/barreraInternaCuartosFrios.jpg'),
+        require('@/assets/Servicios/barreraInternaCuartosFrios.jpg'),
         require('@/assets/escaner.jpg'),
         require('@/assets/infraestructura.jpg'),
         require('@/assets/muelleDescargue.jpg'),
