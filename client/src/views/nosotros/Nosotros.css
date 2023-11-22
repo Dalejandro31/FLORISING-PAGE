@@ -1,24 +1,24 @@
 :root {
-    --gray-0-nosotros:#646464;
-    --gray-1-nosotros:#b2b6bd;
-    --primary-nosotros: #f7f4f3;
-    --secondary-nosotros: #fdc600;
-    --font-size-1-nosotros: 1.5rem;
-    --font-size-2-nosotros: 1.2rem;
-    --font-size-3-nosotros: 1rem;
-    --font-weight-thin-nosotros: 300;
-    --font-weight-bold-nosotros: 600;
-    --font-weight-heavy-nosotros: 800;
-    --spacer-1-nosotros: .25rem;
-    --spacer-2-nosotros: .5rem;
-    --spacer-3-nosotros: 2rem;
-    --spacer-4-nosotros: 1.5rem;
-    --spacer-5-nosotros: 7rem;
-    --shadows-nosotros: 7px 7px 7px rgba(0, 0, 0, .15);
+    --gray-0-nosotros-consolidacion:#646464;
+    --gray-1-nosotros-consolidacion:#b2b6bd;
+    --primary-nosotros-consolidacion: #f7f4f3;
+    --secondary-nosotros-consolidacion: #fdc600;
+    --font-size-1-nosotros-consolidacion: 1.5rem;
+    --font-size-2-nosotros-consolidacion: 1.2rem;
+    --font-size-3-nosotros-consolidacion: 1rem;
+    --font-weight-thin-nosotros-consolidacion: 300;
+    --font-weight-bold-nosotros-consolidacion: 600;
+    --font-weight-heavy-nosotros-consolidacion: 800;
+    --spacer-1-nosotros-consolidacion: .25rem;
+    --spacer-2-nosotros-consolidacion: .5rem;
+    --spacer-3-nosotros-consolidacion: 2rem;
+    --spacer-4-nosotros-consolidacion: 1.5rem;
+    --spacer-5-nosotros-consolidacion: 7rem;
+    --shadows-nosotros-consolidacion: 7px 7px 7px rgba(0, 0, 0, .15);
 }
 
 .titulo-nosotros{
-    background-color: var(--gray-0-nosotros);
+    background-color: var(--gray-0-nosotros-consolidacion);
     width: 100%;
     height: 150px;
     justify-content: center;
@@ -26,9 +26,9 @@
     display: flex;
 }
 .titulo-nosotros p{
-    font-size: var(--font-size-1-nosotros);
-    color: var(--primary-nosotros);
-    font-weight: var(--font-weight-heavy-nosotros);
+    font-size: var(--font-size-1-nosotros-consolidacion);
+    color: var(--primary-nosotros-consolidacion);
+    font-weight: var(--font-weight-heavy-nosotros-consolidacion);
 }
 .mision-vision{
     padding-top: 8%;
@@ -43,37 +43,38 @@
 .card{
     width: auto;
     height: 100%;
-    box-shadow: var(--shadows-nosotros);
+    box-shadow: var(--shadows-nosotros-consolidacion);
     border: none;
     border-radius: .5rem;
     display: flex;
     flex-direction: column;
     text-align: left;
-    background-color: var(--primary-nosotros);
+    background-color: var(--primary-nosotros-consolidacion);
     text-align: center;
 }
 
 .card div{
     border-radius: .5rem .5rem 0 0;
     padding: 5%;
-    background-color: var(--secondary-nosotros);
-    color: var(--primary-nosotros);
+    background-color: var(--secondary-nosotros-consolidacion);
+    color: var(--primary-nosotros-consolidacion);
 }
 .card div h1{
-    font-weight: var(--font-weight-heavy-nosotros);
+    font-weight: var(--font-weight-heavy-nosotros-consolidacion);
 }
 .card p{
     padding: 10%;
-    margin: 0 0 var(--spacer-3-nosotros);
+    margin: 0 0 var(--spacer-3-nosotros-consolidacion);
     line-height: 1.5;
     word-wrap: break-word;
-    font-size: var(--font-size-2-nosotros);
-    font-weight: var(--font-weight-thin-nosotros);
-    color: var(--gray-0-nosotros);
+    font-size: var(--font-size-2-nosotros-consolidacion);
+    font-weight: var(--font-weight-thin-nosotros-consolidacion);
+    color: var(--gray-0-nosotros-consolidacion);
 }
 .reseña-historica{
     display: flex;
-    margin-top: var(--spacer-5-nosotros);
+    margin-top: var(--spacer-5-nosotros-consolidacion);
+    margin-left: var(--spacer-5-nosotros-consolidacion);
 }
 .contenido-reseña{
     display: flex;
@@ -81,26 +82,26 @@
     text-align: justify;
     height: auto;
     width: 50%;
-    padding: var(--spacer-5-nosotros);
-    color: var(--gray-0-nosotros);
+    padding: var(--spacer-5-nosotros-consolidacion);
+    color: var(--gray-0-nosotros-consolidacion);
 }
 .contenido-reseña p{
-    margin: 0 0 var(--spacer-3-nosotros);
+    margin: 0 0 var(--spacer-3-nosotros-consolidacion);
     line-height: 1.5;
     word-wrap: break-word;
-    font-size: var(--font-size-2-nosotros);
-    font-weight: var(--font-weight-thin-nosotros);
+    font-size: var(--font-size-2-nosotros-consolidacion);
+    font-weight: var(--font-weight-thin-nosotros-consolidacion);
 }
 .contenido-reseña div{
     width: 400px;
     height: 4px; 
-    background-color: var(--secondary-nosotros);
+    background-color: var(--secondary-nosotros-consolidacion);
     margin-top: 10px; 
     border-radius: 1rem;
 }
-.objetivos{
-    margin-bottom: var(--spacer-5-nosotros);
-    margin-top: var(--spacer-5-nosotros);
+.objetivos-Consolidacion{
+    margin-bottom: var(--spacer-5-nosotros-consolidacion);
+    margin-top: var(--spacer-5-nosotros-consolidacion);
     display: flex;
     flex-direction: column;
 }
@@ -120,9 +121,9 @@
     align-items: center;
     width: auto;
     height: auto;
-    color: var(--gray-0-nosotros);
+    color: var(--gray-0-nosotros-consolidacion);
     background: white;
-    padding: var(--spacer-4-nosotros);
+    padding: var(--spacer-4-nosotros-consolidacion);
     margin-bottom: auto;
 }
 .contenido-objetivos{
@@ -130,48 +131,48 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: var(--gray-0-nosotros);
-    padding-left: var(--spacer-5-nosotros);
-    padding-right: var(--spacer-5-nosotros);
+    color: var(--gray-0-nosotros-consolidacion);
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 .contenido-objetivos h1{
-    font-weight: var(--font-weight-bold-nosotros);
+    font-weight: var(--font-weight-bold-nosotros-consolidacion);
 }
 .contenido-objetivos p{
-    margin: 0 0 var(--spacer-3-nosotros);
+    margin: 0 0 var(--spacer-3-nosotros-consolidacion);
     line-height: 1.5;
     word-wrap: break-word;
-    font-size: var(--font-size-2-nosotros);
-    font-weight: var(--font-weight-thin-nosotros);
+    font-size: var(--font-size-2-nosotros-consolidacion);
+    font-weight: var(--font-weight-thin-nosotros-consolidacion);
 }
 .contenido-objetivos div{
     width: 250px;
     height: 4px; 
-    background-color: var(--secondary-nosotros);
+    background-color: var(--secondary-nosotros-consolidacion);
     margin-top: 10px; 
     border-radius: 1rem;
 }
 .imgObtetivos-items{
-    filter: drop-shadow(1px 5px 2px var(--secondary-nosotros) );
+    filter: drop-shadow(1px 5px 2px var(--secondary-nosotros-consolidacion));
 }
 .contenido-objetivos-items{
-    background: var(--primary-nosotros);
-    margin-top: var(--spacer-3-nosotros);
+    background: var(--primary-nosotros-consolidacion);
+    margin-top: var(--spacer-3-nosotros-consolidacion);
     text-align: center;
     display: flex;
     width: 100%;
     height: auto;
     border-radius: 2rem;
     padding: 1rem;
-    border-top: 5px solid var(--gray-1-nosotros);
+    border-top: 5px solid var(--gray-1-nosotros-consolidacion);
 }
 
 .contenedor-objetivos-items p{
-    margin: 0 0 var(--spacer-3-nosotros);
+    margin: 0 0 var(--spacer-3-nosotros-consolidacion);
     line-height: 1.5;
     word-wrap: break-word;
-    font-size: var(--font-size-2-nosotros);
-    font-weight: var(--font-weight-thin-nosotros);
+    font-size: var(--font-size-2-nosotros-consolidacion);
+    font-weight: var(--font-weight-thin-nosotros-consolidacion);
 }
 
 
@@ -186,8 +187,8 @@
     margin-right: 5%;
 }
 .contenido-politicas-items{
-    background: var(--primary-nosotros);
-    margin-top: var(--spacer-3-nosotros);
+    background: var(--primary-nosotros-consolidacion);
+    margin-top: var(--spacer-3-nosotros-consolidacion);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -195,16 +196,16 @@
     height: auto;
     border-radius: 2rem;
     padding: 1rem;
-    border-top: 5px solid var(--gray-1-nosotros);
+    border-top: 5px solid var(--gray-1-nosotros-consolidacion);
     position: relative;
 }
 
 .contenedor-politicas-items p{
-    margin: 0 0 var(--spacer-3-nosotros);
+    margin: 0 0 var(--spacer-3-nosotros-consolidacion);
     line-height: 1.5;
     word-wrap: break-word;
-    font-size: var(--font-size-2-nosotros);
-    font-weight: var(--font-weight-thin-nosotros);
+    font-size: var(--font-size-2-nosotros-consolidacion);
+    font-weight: var(--font-weight-thin-nosotros-consolidacion);
     margin-top: 3rem;
 }
 .politicas-items{
@@ -213,16 +214,16 @@
     align-items: center;
     width: auto;
     height: auto;
-    color: var(--gray-0-nosotros);
+    color: var(--gray-0-nosotros-consolidacion);
     background: white;
-    padding: var(--spacer-4-nosotros);
+    padding: var(--spacer-4-nosotros-consolidacion);
     margin-bottom: auto;
 }
 .punto-derecha{
     height: 20px;
     width: 20px;
     background: white;
-    filter: drop-shadow(1px 1px 5px var(--secondary-nosotros) );
+    filter: drop-shadow(1px 1px 5px var(--secondary-nosotros-consolidacion) );
     border-radius: 80%;
     position: absolute;
     top: 2;
@@ -233,7 +234,7 @@
     height: 20px;
     width: 20px;
     background: white;
-    filter: drop-shadow(1px 1px 8px var(--secondary-nosotros) );
+    filter: drop-shadow(1px 1px 8px var(--secondary-nosotros-consolidacion));
     border-radius: 80%;
     position: absolute;
     top: 2;
