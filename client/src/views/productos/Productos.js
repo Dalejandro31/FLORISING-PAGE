@@ -23,4 +23,5 @@ content.flor13 = 'MOVIE STAR'
 content.flor14 = 'PINK FLOYD'
 content.flor15 = 'MONDIAL'
 
+content.title3 = 'BOUQUET'
 export {content}

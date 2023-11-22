@@ -146,6 +146,16 @@
             </Transition>
         </div>
     </section>
+    <div class="separ"/>
+    <section>
+        <br>
+        <div class="titulo-izquierda">
+            <p>{{ content.title3 }}</p>
+        </div>
+        <div class="nuestro-producto-flor">
+
+        </div>
+    </section>
 </template>
 <script>
     import {content} from '@/views/productos/Productos'

@@ -13,17 +13,102 @@
     --spacer-2-footer: .5rem;
     --spacer-3-footer: 1rem;
     --spacer-4-footer: 1.5rem;
-    --spacer-5-footer: 2rem;
+    --spacer-5-footer: 4rem;
     --shadows-footer: 7px 7px 7px rgba(0, 0, 0, .15);
   }
 
 
 .footer{
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--gray-0-footer);
-    padding-left: 3%;
-    padding-right: 3%;
-    border-top: 10px solid var(--secondary-footer);
+  height: auto;
+  justify-content: space-between;
+  background-color: var(--gray-0-footer);
+  padding-left: 3%;
+  padding-right: 3%;
+  border-top: 10px solid var(--secondary-footer);
+}
+.redes-contacto{
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: repeat(1, 1fr);
+  align-items: center;
+  text-align: center;
+  margin-top: -10px;
+}
+.redes{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1, 1fr);
+  align-items: center;
+  padding: 110px;
+}
+.redes button{
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  width: 50px;
+  box-shadow: var(--shadows-footer);
+}
+.redes button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.redes img{
+  margin-top: 4px;
+  width: 85%;
+}
+.contacto{
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 150px;
+  width: 300px;
+  height: 200px;
+}
+
+.contacto img{
+  width: 85%;
+}
+.cont-contac{
+  width: 100px;
+  height: 50px;
+}
+.cont-contac p{
+  margin: 0 0 var(--spacer-3-footer);
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-size: var(--font-size-3-footer);
+  font-weight: var(--font-weight-thin-footer);
+  color: var(--gray-1-footer);
+  margin-top: 10px;
+  width: 300px;
+  height: 50px;
+}
+
+.titulo-cont{
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.titulo-cont h1{
+  margin: 0 0 var(--spacer-5-footer);
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: var(--font-weight-heavy-footer);
+  color: var(--gray-1-footer);
+  text-align: left;
+  margin-top: 2%;
+  margin-bottom: 0;
+}
+.separ-foot{
+  background-color: var(--secondary-servicios);
+  height: 3px;
+  margin-left: 7%;
+  margin-right: 53%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  opacity: 85%;
+  
 }

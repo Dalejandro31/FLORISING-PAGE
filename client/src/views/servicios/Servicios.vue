@@ -13,7 +13,7 @@
         </div>
         <div class="nuestro-servicio">
             <div class="imagenes">
-                <carrusel :slides="slidesRecepcion" :interval="5000" controls indicators =""/>
+                <carrusel :slides="slidesRecepcion" :interval="5000"/>
             </div>
             <div class="contenido-der">
                 <br>
@@ -39,7 +39,7 @@
                 <p>{{ content.almacenamientoFrio2 }}</p>
             </div>
             <div class="imagenes">
-                <carrusel :slides="slidesCuartosFrios" :interval="5000" controls indicators =""/>
+                <carrusel :slides="slidesCuartosFrios" :interval="5000"/>
             </div>
         </div>
         
@@ -54,7 +54,7 @@
         </div>
         <div class="nuestro-servicio">
             <div class="imagenes">
-                <carrusel :slides="slidesTransportes" :interval="5000" controls indicators =""/>
+                <carrusel :slides="slidesTransportes" :interval="5000"/>
             </div>
             <div class="contenido-der">
                 <br>
@@ -76,7 +76,7 @@
                 <p>{{ content.otros }}</p>
             </div>
             <div class="imagenes">
-                    <carrusel :slides="slidesOtros" :interval="5000" controls indicators =""/>
+                    <carrusel :slides="slidesOtros" :interval="5000"/>
             </div>
         </div>
     </section>
