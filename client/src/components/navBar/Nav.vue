@@ -17,8 +17,8 @@
             <div class="desplegable">
                 <button>SOBRE NOSOTROS</button>
                 <div class="links-menu">
-                    <a @click="redirigir('/nosotros-FLORISING-COMMERCIAL-&-LOGISTICS-GROUP')">FLORISING COMMERCIAL & LOGISTICS GROUP</a>
-                    <a @click="redirigir('/nosotros-FLORISING-CLG-SAS')">FLORISING CLG SAS</a>
+                    <a @click="redirigir('/nosotros-FLORISING-COMMERCIAL-&-LOGISTICS-GROUP')">FLORISING CENTRO DE CONSOLIDACION</a>
+                    <a @click="redirigir('/nosotros-FLORISING-CLG-SAS')">FLORISING EXPORTACIONES</a>
                 </div>
             </div>
             <button @click="$event => redirigir('/contactanos')">CONTACTANOS</button>
