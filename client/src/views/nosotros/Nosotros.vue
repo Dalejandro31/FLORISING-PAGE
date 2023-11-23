@@ -1,7 +1,7 @@
 <template>
     <div class="nosotros-consolidacion">
       <div class="titulo-nosotros-consolidacion">
-        <p>{{ content.title }}</p>
+        <h1>{{ content.title }}</h1>
       </div>
       <section class="mision-vision-consolidacion">
         <div class="card-consolidacion">

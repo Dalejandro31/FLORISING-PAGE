@@ -20,13 +20,13 @@
 .titulo-nosotros-consolidacion{
     background-color: var(--gray-0-nosotros-consolidacion);
     width: 100%;
-    height: 150px;
+    height: auto;
+    padding: 25px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.titulo-nosotros-consolidacion p{
-    font-size: var(--font-size-1-nosotros-consolidacion);
+.titulo-nosotros-consolidacion h1{
     color: var(--primary-nosotros-consolidacion);
     font-weight: var(--font-weight-heavy-nosotros-consolidacion);
 }
