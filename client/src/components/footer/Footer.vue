@@ -8,24 +8,32 @@
                 <button><img src="../../assets/Redes/twitter-x.png" alt=""></button>
             </div>
             <div/>
-            <div class="contacto">
+            <div>
                 <div class="titulo-cont">
                     <h1>Contacto</h1>
-                    <div class="separ-foot"/>
-                </div>
-                <img src="../../assets/Contactenos/ubicacion.png" alt="">
-                <div class="cont-contac">
-                    <p>{{content.ubicacion2}}</p>
-                </div>
-                <img src="../../assets/Contactenos/telefono.png" alt="">
-                <div class="cont-contac">
-                    <p>{{ content.telefono2 }}</p>
-                </div>
-                <img src="../../assets/Contactenos/email.png" alt="">
-                <div class="cont-contac">
-                    <p>{{content.email2}}</p>
                 </div>
                 
+                <div class="separ-foot"/>
+                <div class="contacto">
+                    <img src="../../assets/Contactenos/ubicacion.png" alt="">
+                    <div class="cont-contac">
+                        <p>{{content.ubicacion2}}</p>
+                    </div>
+
+                </div>
+                <div class="contacto">
+                    <img src="../../assets/Contactenos/telefono.png" alt="">
+                    <div class="cont-contac">
+                        <p>{{ content.telefono2 }}</p>
+                    </div>
+                </div>
+
+                <div class="contacto">
+                    <img src="../../assets/Contactenos/email.png" alt="">
+                    <div class="cont-contac">
+                        <p>{{content.email2}}</p>
+                    </div>
+                </div>
             </div>
 
         </div>

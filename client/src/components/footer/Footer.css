@@ -6,6 +6,7 @@
     --font-size-1-footer: 1.5rem;
     --font-size-2-footer: 1.25rem;
     --font-size-3-footer: 1rem;
+    --font-size-4-footer: 0.7rem;
     --font-weight-thin-footer: 300;
     --font-weight-bold-footer: 600;
     --font-weight-heavy-footer: 800;
@@ -28,6 +29,7 @@
 }
 .redes-contacto{
   display: grid;
+  height: 170px;
   grid-template-columns: 40% 20% 40%;
   grid-template-rows: repeat(1, 1fr);
   align-items: center;
@@ -37,15 +39,18 @@
 .redes{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(1, 1fr);
   align-items: center;
-  padding: 110px;
+  justify-content: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  height: auto;
+  width: auto;
 }
 .redes button{
   border-radius: 10px;
   border: none;
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   box-shadow: var(--shadows-footer);
 }
 .redes button:hover{
@@ -54,59 +59,63 @@
 }
 .redes img{
   margin-top: 4px;
-  width: 85%;
+  width: 70%;
 }
 .contacto{
   display: grid;
-  grid-template-columns: 10% 90%;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 5% 95%;
   align-items: center;
   text-align: left;
   margin-bottom: 30px;
-  margin-left: 150px;
+  margin-left: 40%;
   width: 300px;
-  height: 200px;
+  height: 5px;
 }
 
+
 .contacto img{
-  width: 85%;
+  width: 90%;
+  margin-bottom: 60%;
 }
 .cont-contac{
   width: 100px;
-  height: 50px;
+  height: 30px;
+  align-items: center;
+  text-align: left;
 }
 .cont-contac p{
   margin: 0 0 var(--spacer-3-footer);
   line-height: 1.5;
   word-wrap: break-word;
-  font-size: var(--font-size-3-footer);
+  font-size: var(--font-size-4-footer);
   font-weight: var(--font-weight-thin-footer);
   color: var(--gray-1-footer);
-  margin-top: 10px;
   width: 300px;
-  height: 50px;
+  height: 5px;
+  margin-left: 5%;
 }
 
 .titulo-cont{
-  display: grid;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  margin-top: 3%;
+  margin-left: 25%;
 }
 .titulo-cont h1{
   margin: 0 0 var(--spacer-5-footer);
   line-height: 1.5;
   word-wrap: break-word;
   font-weight: var(--font-weight-heavy-footer);
+  font-size: var(--font-size-2-footer);
   color: var(--gray-1-footer);
   text-align: left;
-  margin-top: 2%;
+  margin-left: 20%;
+  margin-top: -10px;
   margin-bottom: 0;
 }
 .separ-foot{
   background-color: var(--secondary-servicios);
-  height: 3px;
-  margin-left: 7%;
-  margin-right: 53%;
+  height: 2px;
+  margin-left: 42%;
+  margin-right: 44%;
   margin-bottom: 2%;
   border-radius: 10px;
   opacity: 85%;
