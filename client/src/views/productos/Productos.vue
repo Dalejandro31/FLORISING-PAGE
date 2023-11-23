@@ -5,7 +5,7 @@
 
     <section>
         <br>
-        <div class="titulo-izquierda">
+        <div class="titulo-izquierda" id="productos-verdes">
             <p>{{ content.title1 }}</p>
         </div>
         <div class="nuestro-producto-verde">
@@ -47,7 +47,7 @@
     <div class="separ"/>
     <section class="section">
         <br>
-        <div class="titulo-derecha">
+        <div class="titulo-derecha" id="productos-rosas">
             <p>{{ content.title2 }}</p>
         </div>
         <div class="nuestro-producto-flor">

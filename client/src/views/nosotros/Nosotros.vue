@@ -1,6 +1,6 @@
 <template>
     <div class="nosotros-consolidacion">
-      <div class="titulo-nosotros-consolidacion">
+      <div class="titulo-nosotros-consolidacion" id="sobre-nosotros">
         <h1>{{ content.title }}</h1>
       </div>
       <section class="mision-vision-consolidacion">
