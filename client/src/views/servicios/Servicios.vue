@@ -3,7 +3,7 @@
         <h1 class="titulo-servicios"> SERVICIOS DE CONSOLIDACIÓN </h1>
     </div>
 
-    <section> 
+    <section id="recepcion-y-consolidacion-en-frio"> 
         <!-- // se le añade un display felx colum 
         //div -> titulo
         //div -> div -> img : div -> texto -->
@@ -11,7 +11,7 @@
         <div class = "titulo-izquierda">
             <p>{{ content.title1 }}</p>
         </div>
-        <div class="nuestro-servicio">
+        <div class="nuestro-servicio"  >
             <div class="imagenes">
                 <carrusel :slides="slidesRecepcion" :interval="5000"/>
             </div>
@@ -26,7 +26,8 @@
         </div>
     </section>
     <div class="separ"/>
-    <section>
+
+    <section id="almacenamiento-en-frio">
         <br>
         <div class="titulo-derecha">
             <p>{{ content.title2 }}</p>
@@ -42,10 +43,9 @@
                 <carrusel :slides="slidesCuartosFrios" :interval="5000"/>
             </div>
         </div>
-        
-        
     </section>
     <div class="separ"/>
+
     <section>
 
         <br>
@@ -64,7 +64,7 @@
         </div>
     </section>
     <div class="separ"/>
-    <section>
+    <section id="oficinas">
         <br>
         <div class="titulo-derecha">
             <p>{{ content.title4 }}</p>

@@ -20,6 +20,9 @@
 .nuestra-empresa{
     display: flex;
     margin-top: var(--spacer-5-contenido);
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-bottom: var(--spacer-5-contenido);
 }
 .contenido{
     display: flex;
@@ -27,7 +30,6 @@
     text-align: justify;
     height: auto;
     width: 50%;
-    margin-left: var(--spacer-5-contenido);
     margin-right: var(--spacer-5-contenido);
     color: var(--gray-0-contenido);
     
@@ -74,7 +76,6 @@
     width: 50%;
     align-items: center;
     justify-content: center;
-    padding-right: var(--spacer-5-contenido);
     padding-top: var(--spacer-4-contenido);
 }
 .infraestructura div{
@@ -115,7 +116,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--secondary-contenido);
-    padding: var(--spacer-2-contenido);
+    padding: var(--spacer-4-contenido);
     border: none;
     border-radius: .2rem;
     margin-top:auto ;
@@ -130,20 +131,14 @@
     font-weight: var(--font-weight-heavy-contenido);
 }
 
-[name="titulo"]{
-    font-weight: var(--font-weight-heavy-contenido);
-    font-size: var(--font-size-2);
-    color: var(--gray-0);
-    margin-bottom: 2rem;
-}
-
-[name="contenido"]{
-    margin: 0 0 var(--spacer-3);
+[name="contenido-home"]{
+    margin: 0 0 var(--spacer-3-contenido);
     line-height: 1.5;
     word-wrap: break-word;
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-3);
-    color: var(--gray-0);
+    font-size: var(--font-size-2-contenido);
+    font-weight: var(--font-weight-thin-contenido);
+    margin-top: var(--spacer-4-contenido);
+    padding: var(--spacer-3-contenido);
 }
 
 .nuestros-servicios img{
@@ -151,6 +146,7 @@
     height: 300px;
     margin-right: var(--spacer-2);
     border-radius: .5rem .5rem 0 0;
+    margin-bottom: var(--spacer-4-contenido);
     
 }
 .title1{

@@ -23,31 +23,35 @@
     <section class="nuestros-servicios">
       <div class="card-servicios">
         <img src="../../assets/plantaCttv.jpg" alt="">
-        <p name="titulo">{{ content.title2 }}</p>
-        <p name="contenido">{{ content.content3 }}</p>
-        <button>
+        <h1 name="titulo-home">{{ content.title2 }}</h1>
+        <p name="contenido-home">{{ content.content3 }}</p>
+        <button @click="verMasServicios('almacenamiento-en-frio')">
           VER MAS
         </button>
       </div>
       
       <div class="card-servicios">
         <img src="../../assets/Servicios/barreraInternaCuartosFrios.jpg" alt="cuartosFrios">
-        <p name="titulo">{{ content.title3 }}</p>
-        <p name="contenido">{{ content.content4 }}</p>
-        <button>
+        <h1 name="titulo-home">{{ content.title3 }}</h1>
+        <p name="contenido-home">{{ content.content4 }}</p>
+        <button @click="verMasServicios('recepcion-y-consolidacion-en-frio')">
           VER MAS
         </button>
       </div>
       
       <div class="card-servicios">
         <img src="../../assets/plantaCttv.jpg" alt="">
-        <p name="titulo">{{ content.title4 }}</p>
-        <p name="contenido">{{ content.content5 }}</p>
-        <button>
+        <h1 name="titulo-home">{{ content.title4 }}</h1>
+        <p name="contenido-home">{{ content.content5 }}</p>
+        <button @click="verMasServicios('oficinas')">
           VER MAS
         </button>
       </div>
       
+    </section>
+
+    <section>
+      <p>seccion de flores</p>
     </section>
 </template>
 
@@ -59,6 +63,18 @@
     components: {
       Carrusel
     },
+    methods: {
+    verMasServicios(destino) {
+        this.$router.push({ name: 'Servicios-Consolidacion' });
+        setTimeout(() => {
+            const elementoNuestroServicio = document.getElementById(destino);
+            if (elementoNuestroServicio) {
+                elementoNuestroServicio.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 500);
+    }
+},
+
     data:() => ({
       slides: [
         require('@/assets/fachada.png'),
@@ -71,6 +87,7 @@
       ],
       content: content
     })
+    
   }
 </script>
 <style scoped>

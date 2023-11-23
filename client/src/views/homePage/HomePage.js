@@ -14,14 +14,14 @@ necesiten ubicar sus productos bajo
 condiciones controladas de
 temperatura`;
 content.title1= `NUESTROS SERVICIOS`
-content.title2= `Almacenamiento En Frio`
+content.title2= `ALMACENAMIENTO EN FRIO`
 content.content3 = `Operaciones de Cross Docking Capacidad
 de 460 Mts³ Refrigeración hasta - 18°C`;
-content.title3= `Recepcion y consolidacion en frio`
+content.title3= `RECEPCION Y CONSOLIDACION EN FRIO`
 content.content4 = `Material de empaque
 (Estibas, esquineros, zunchos...) Armado de pallets
 (Organización y tratamiento adecuado...)`;
-content.title4= `Otros Servicios`
+content.title4= `OTROS SERVICIOS`
 content.content5 = `Centro de negocios / Oficinas disponibles `;
 
 
