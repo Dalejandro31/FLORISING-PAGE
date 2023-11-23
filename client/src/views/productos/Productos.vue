@@ -45,7 +45,7 @@
         </div>
     </section>
     <div class="separ"/>
-    <section>
+    <section class="section">
         <br>
         <div class="titulo-derecha">
             <p>{{ content.title2 }}</p>

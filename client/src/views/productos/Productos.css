@@ -72,6 +72,7 @@
     margin-bottom: 2%;
     object-fit: fill;
   }
+
   .nuestro-producto-flor{
     display: flex;
   }
@@ -83,17 +84,18 @@
     margin-right: 15%;
     margin-top: 5rem;
     margin-bottom: 3rem;
-    
   }
   .nuestro-producto-flor div{
+    display: grid;
     align-items: center;
-    text-align: center;
     padding-left: 3%;
     padding-right: 3%;
     padding-top: 2%;
+    justify-content: center;
   }
+  
   .nuestro-producto-flor button{
-    width: 40%;
+    width: 150px;
     height: 50px;
     margin-top: var(--spacer-4-productos);
     background-color: var(--secondary-productos);
@@ -102,9 +104,10 @@
     font-size: var(--font-size-3-productos);
     font-weight: var(--font-weight-bold-productos);
     border-radius: .5rem;
+    box-shadow: var(--shadows-productos);
   }
   .nuestro-producto-flor button:hover{
-    width: 40%;
+    width: 150px;
     height: 50px;
     margin-top: var(--spacer-4-contenido);
     background-color: var(--secondary-contenido);
@@ -112,16 +115,14 @@
     color: var(--primary-contenido);
     cursor: pointer;
     font-weight: var(--font-weight-heavy-contenido);
+    box-shadow: var(shad);
   }
   .contenido-flor{
-    display: flex;
-    flex-direction: column;
     padding: var(--spacer-1-productos);
     border-radius: 15px;
     margin-bottom: 2rem;
     margin-left: 15%;
     margin-right: 15%;
-    padding-top: 50%;
     background-color: var(--primary-productos);
     border: solid 3px var(--secondary-productos);
     box-shadow: var(--shadows-productos);
@@ -141,7 +142,7 @@
     background-color: var(--secondary-productos);
     margin-top: 5px;
     border-radius: 1rem;
-    
+    justify-content: center;
   }
   .imagen-flor {
     width: 300px;
