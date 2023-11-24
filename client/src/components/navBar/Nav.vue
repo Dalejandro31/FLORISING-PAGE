@@ -23,6 +23,17 @@
             </div>
             <button @click="$event => redirigir('/contactanos')">CONTACTANOS</button>
         </div>
+        <a @click="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+        <div class="overlay" id="mobile-menu">
+            <a @click="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="">INICIO</a>
+                <a href="">SERVICIOS</a>
+                <a href="">SOBRE NOSOTROS</a>
+                <a href="">CONTACTANOS</a>
+            </div>
+        </div>
     </nav>
 </template>
 
@@ -32,6 +43,12 @@ export default {
     methods:{
         redirigir(ruta){
             this.$router.push(ruta);
+        },
+        openNav(){
+            document.getElementById("mobile-menu").style.width = "100%";
+        },
+        closeNav(){
+            document.getElementById("mobile-menu").style.width = "0%";
         }
     }
 }

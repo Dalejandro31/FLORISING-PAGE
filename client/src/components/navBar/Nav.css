@@ -46,7 +46,11 @@
     height: auto;
     
 }
-.links button{
+.menu{
+    display: none;
+}
+.links button,
+.NavBar .menu button{
     color: var(--gray-0-nav);
     font-size: 22px;
     font-weight: bold;
@@ -57,14 +61,14 @@
     background-color: var(--primary-nav);
     border-radius: .5rem;
 }
-.links button:hover {
+.links button:hover,
+.NavBar .menu button:hover {
     background: var(--secondary-nav);
     color: var(--primary-nav);
     border: none;
     cursor: pointer;
 }
 .links-menu a{
-    text-decoration: none;
     color: var(--gray-0-nav);
     display: block;
     padding: 1rem;
@@ -84,5 +88,67 @@
     display: block;
     position: absolute;
     z-index: 2;
+}
+
+/*responsive*/
+
+.NavBar a{
+    text-decoration: none;
+}
+.NavBar .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    background: var(--secondary-nav);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.NavBar .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.NavBar .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: var(--primary-nav);
+}
+.NavBar .overlay a:hover,
+.NavBar .overlay a:focus{
+    color: var(--gray-1-nav)
+}
+.NavBar .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-width: 800px) {
+    .links{
+        display: none;
+    }
+    .menu{
+        display: inherit    ;
+    }
+}
+
+@media screen and (max-height:450px) {
+    .NavBar .overlay a{
+        font-size: 20px;
+    }
+    .NavBar .overlay .close{
+        font-size: 40px;
+        top:15px;
+        right: 35px;
+    }
 }
 
