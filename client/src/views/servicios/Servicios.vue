@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1 class="titulo-servicios"> SERVICIOS DE CONSOLIDACIÓN </h1>
+    <div class="titulo-servicios">
+        <h1> SERVICIOS DE CONSOLIDACIÓN </h1>
     </div>
 
     <section id="recepcion-y-consolidacion-en-frio"> 

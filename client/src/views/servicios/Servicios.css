@@ -48,10 +48,10 @@
     margin-left: -10px;
     border-radius: 1rem;
 }
+
 .imagenes div img{
-    border-radius: 15px;
+    border-radius: 10px;
     margin-right: var(--spacer-2-servicios);
-    box-shadow: var(--shadows-servicios);
     border: solid 1px var(--gray-0-servicios) ;
 }
 .imagenes div{
@@ -110,10 +110,16 @@
 
 .titulo-servicios{
     background-color: var(--gray-0-servicios);
-    height: 90px;
-    text-align: center;
-    color: white;
-    padding-top: 25px;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.titulo-servicios h1{
+    color: var(--primary-servicios);
+    font-weight: var(--font-weight-heavy-servicios);
 }
 
 .titulo-izquierda{

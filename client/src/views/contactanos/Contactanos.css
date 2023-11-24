@@ -93,8 +93,14 @@
   }
   .titulo-contactanos{
     background-color: var(--gray-0-contactanos);
-    height: 90px;
-    text-align: center;
-    color: white;
-    padding-top: 25px;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.titulo-contactanos h1{
+  color: var(--primary-contactanos);
+  font-weight: var(--font-weight-heavy-contactanos);
 }
