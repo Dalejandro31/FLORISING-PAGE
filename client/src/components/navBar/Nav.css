@@ -132,16 +132,30 @@
     font-size: 65px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 270px) and (max-width: 1023px) {
     .links{
         display: none;
     }
     .menu{
-        display: inherit    ;
+        display: inherit;
+    }
+
+    .NavBar .menu button{
+        box-shadow: 1px 1px 4px var(--secondary-nav);
+        height: 50px;
+        width: 100px;
+    }
+    
+    .logo img{
+        height: 100%;
+        width: 100%;
+    }
+    .logo{
+        width: 150px;
     }
 }
 
-@media screen and (max-height:450px) {
+@media screen and (max-height:350px) {
     .NavBar .overlay a{
         font-size: 20px;
     }
@@ -150,5 +164,6 @@
         top:15px;
         right: 35px;
     }
+    
 }
 
