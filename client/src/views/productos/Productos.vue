@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1 class="titulo-productos">SERVICIOS DE FLORISTERIA</h1>
+    <div class="titulo-productos">
+        <h1 >SERVICIOS DE FLORISTERIA</h1>
     </div>
 
     <section>
