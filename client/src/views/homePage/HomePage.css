@@ -27,7 +27,6 @@
 .contenido{
     display: flex;
     flex-direction: column;
-    text-align: justify;
     height: auto;
     width: 100%;
     margin-right: var(--spacer-5-contenido);
@@ -37,6 +36,7 @@
 .contenido p{
     margin: 0 0 var(--spacer-3-contenido);
     line-height: 1.5;
+    text-align: justify;
     word-wrap: break-word;
     font-size: var(--font-size-2-contenido);
     font-weight: var(--font-weight-thin-contenido);
@@ -209,4 +209,34 @@
     margin-right: var(--spacer-2);
     border-radius: .5rem .5rem 0 0;
     margin-bottom: var(--spacer-4-contenido);
+}
+
+@media screen and (min-width: 270px) and (max-width: 1023px) {
+    .nuestra-empresa{
+        flex-direction: column;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .contenido button{
+        display: none;
+    }
+    .infraestructura{
+        width: 95%;
+    }
+    .infraestructura div img{
+        width: 100%;
+    }
+    .nuestros-servicios{
+        grid-template-columns: 1fr;
+        height: auto;
+        grid-gap: 1%;
+    }
+    .floristeria-home{
+        flex-direction: column;
+    }
+    .card-floristeria{
+        width: 90%;
+    }
 }
