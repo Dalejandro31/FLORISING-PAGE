@@ -23,26 +23,28 @@
             </div>
             <button @click="$event => redirigir('/contactanos')">CONTACTANOS</button>
         </div>
-        <a @click="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+        <a @click.prevent="openNav()" class="menu" href="#"><button>Menu</button></a>
 
         <div class="overlay" id="mobile-menu">
-            <a @click="closeNav()" href="" class="close">&times;</a>
+            <a @click.prevent="closeNav()" href="" class="close">&times;</a>
+
             <div class="overlay-content">
                 <a @click="redirigir('/')">INICIO</a>
                 
                 <div class="desplegable">
                     <a @click="toggleSubMenu('servicios')">SERVICIOS</a>
-                    <div class="links-menu" v-if="subMenuOpen === 'servicios'">
-                        <a @click="redirigir('/servicios-Centro-Consolidacion')">CENTRO DE CONSOLIDACION</a>
-                        <a @click="redirigir('/servicios-Floristeria')">FLORISTERIA</a>
+                    <div class="links-menu-mobile" v-if="subMenuOpen === 'servicios'">
+                        <a @click="redirigir('/servicios-Centro-Consolidacion')">Centro de Consolidación</a>
+                        <a @click="redirigir('/servicios-Floristeria')">Floristeria</a>
                     </div>
                 </div>
                 
                 <div class="desplegable">
                     <a @click="toggleSubMenu('nosotros')">SOBRE NOSOTROS</a>
-                    <div class="links-menu" v-if="subMenuOpen === 'nosotros'">
-                        <a @click="redirigir('/nosotros-FLORISING-COMMERCIAL-&-LOGISTICS-GROUP')">FLORISING CENTRO DE CONSOLIDACION</a>
-                        <a @click="redirigir('/nosotros-FLORISING-CLG-SAS')">FLORISING EXPORTACIONES</a>
+                    <div class="links-menu-mobile" v-if="subMenuOpen === 'nosotros'">
+                        <a @click="redirigir('/nosotros-FLORISING-COMMERCIAL-&-LOGISTICS-GROUP')">Florising Centro de consolidacion</a>
+                        <a @click="redirigir('/nosotros-FLORISING-CLG-SAS')">Florising Exportaciones</a>
                     </div>
                 </div>
                 
@@ -60,21 +62,22 @@ export default {
             subMenuOpen: null
         };
     },
-    methods:{
-        redirigir(ruta){
+    methods: {
+        redirigir(ruta) {
             this.$router.push(ruta);
+            this.closeNav(); 
         },
-        openNav(){
+        openNav() {
             document.getElementById("mobile-menu").style.width = "100%";
         },
-        closeNav(){
+        closeNav() {
             document.getElementById("mobile-menu").style.width = "0%";
         },
         toggleSubMenu(menu) {
             if (this.subMenuOpen === menu) {
-                this.subMenuOpen = null; // Cierra el submenú si ya está abierto
+                this.subMenuOpen = null;
             } else {
-                this.subMenuOpen = menu; // Abre el submenú si está cerrado
+                this.subMenuOpen = menu;
             }
         },
     }
