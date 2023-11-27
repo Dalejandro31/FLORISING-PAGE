@@ -112,6 +112,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+.NavBar .overlay .overlay-content a{
+    font-size: 20px;
+}
+.links-menu-mobile{
+    background: var(--secondary-nav);
+}
+.links-menu-mobile a{
+    border-bottom: solid 1px var(--primary-nav);
+    border-top:solid 1px var(--primary-nav) ;
+}
+
+.desplegable .links-menu-mobile{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .NavBar .overlay a{
     padding: 15px;
@@ -123,7 +140,8 @@
 }
 .NavBar .overlay a:hover,
 .NavBar .overlay a:focus{
-    color: var(--gray-1-nav)
+    color: var(--gray-1-nav);
+    cursor: pointer;
 }
 .NavBar .overlay .close{
     position: absolute;
