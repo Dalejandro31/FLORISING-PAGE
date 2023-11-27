@@ -104,3 +104,23 @@
   color: var(--primary-contactanos);
   font-weight: var(--font-weight-heavy-contactanos);
 }
+
+@media screen and (min-width: 270px) and (max-width: 1024px){
+  .contactanos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .info{
+    width: auto;
+    height: auto;
+  }
+  .contenido-cont p{
+    font-size: var(--font-size-3-contactanos);
+  }
+  
+  
+}
