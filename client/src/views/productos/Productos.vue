@@ -45,7 +45,7 @@
         </div>
     </section>
     <div class="separ"/>
-    <section class="section">
+    <section>
         <br>
         <div class="titulo-derecha" id="productos-rosas">
             <p>{{ content.title2 }}</p>
@@ -132,14 +132,14 @@
                     <p>{{ content.flor9 }}</p>
                 </div>
             </div>
-            <div/>
-            <div>
+
+        </div>
+        <div>
+            <div class="section">
+
                 <button @click="togglePopUp()">VER MAS</button>
             </div>
-
-            
         </div>
-        
         <div>
             <Transition name="fade">
                 <PopUpFlores v-show="popUp" @close="togglePopUp()"/>

@@ -145,14 +145,16 @@
                             <p>{{ content.flor15 }}</p>
                         </div>
                     </div>
-                    <div/>
-                    <div>
+                    
+                </div>
+                <div>
+                    <div class="section">
+
                         <button @click="close()">
-                        CERRAR  
-                    </button>
+                           CERRAR  
+                        </button>
                     </div>
                 </div>
-                
             </section>
             <div class="separ"/>
         </div>

@@ -3,7 +3,7 @@
         <h1> SERVICIOS DE CONSOLIDACIÓN </h1>
     </div>
 
-    <section id="recepcion-y-consolidacion-en-frio"> 
+    <section class="recepcion-y-consolidacion-en-frio"> 
         <!-- // se le añade un display felx colum 
         //div -> titulo
         //div -> div -> img : div -> texto -->
@@ -17,11 +17,11 @@
             </div>
             <div class="contenido-der">
                 <br>
-                <br>
                 <p>{{ content.recepcionfrio1 }}</p>
                 <p>{{ content.recepcionfrio2 }}</p>
                 <p>{{ content.recepcionfrio3 }}</p>
                 <p>{{ content.recepcionfrio4 }}</p>
+                <br>
             </div>
         </div>
     </section>
@@ -34,7 +34,6 @@
         </div>
         <div class="nuestro-servicio">
             <div class="contenido-izq">
-                <br>
                 <br>
                 <p>{{ content.almacenamientoFrio }}</p>
                 <p>{{ content.almacenamientoFrio2 }}</p>
@@ -71,7 +70,6 @@
         </div>
         <div class="nuestro-servicio">
             <div class="contenido-izq">
-                <br>
                 <br>
                 <p>{{ content.otros }}</p>
             </div>
