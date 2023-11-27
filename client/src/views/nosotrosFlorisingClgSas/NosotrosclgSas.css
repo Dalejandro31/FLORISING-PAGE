@@ -109,3 +109,21 @@
     margin-top: 10px; 
     border-radius: 1rem;
 }
+
+@media screen and (min-width: 270px) and (max-width: 1023px) {
+    .objetivos{
+        grid-template-columns: 1fr;
+        height: auto;
+        grid-gap: 1%;
+    }
+    .mision-vision{
+        grid-template-columns: 1fr;
+        height: auto;
+        grid-gap: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .titulo-nosotros h1{
+        text-align: center;
+    }
+}

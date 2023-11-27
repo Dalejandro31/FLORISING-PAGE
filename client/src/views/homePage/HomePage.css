@@ -225,6 +225,13 @@
     }
     .contenido{
         width: 100%;
+        align-items: center;
+    }
+    .contenido h1{
+        text-align: center;
+    }
+    .contenido p{
+        text-align: center;
     }
     .contenido button{
         display: none;

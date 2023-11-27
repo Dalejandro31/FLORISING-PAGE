@@ -25,6 +25,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    text-align: center;
 }
 .titulo-nosotros-consolidacion h1{
     color: var(--primary-nosotros-consolidacion);
@@ -99,7 +100,7 @@
     width: 90%;
 }
 .contenido-reseña-consolidacion div{
-    width: 400px;
+    width: 90%;
     height: 4px; 
     background-color: var(--secondary-nosotros-consolidacion);
     margin-top: 10px; 
@@ -135,7 +136,6 @@
     padding-top: 5%;
     display: grid;
     grid-template-columns:repeat(4, 1fr);
-    grid-gap: 5%;
     justify-content: center;
     align-items: center;
     margin-left: 10% ;
@@ -206,7 +206,6 @@
     padding-top: 5%;
     display: grid;
     grid-template-columns:repeat(5, 1fr);
-    grid-gap: 1%;
     justify-content: center;
     align-items: center;
     margin-left: 5% ;
@@ -265,4 +264,71 @@
     position: absolute;
     top: 2;
     left: 1rem;
+}
+
+@media screen and (min-width: 270px) and (max-width: 1023px) {
+    .reseña-historica-consolidacion{
+        flex-direction: column;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .contenido-reseña-consolidacion{
+        width: 100%;
+        align-items: center;
+    }
+    .contenido-reseña-consolidacion h1{
+        text-align: center;
+    }
+    .contenido-reseña-consolidacion p{
+        text-align: center;
+    }
+    .contenido button{
+        display: none;
+    }
+    .consolidacion{
+        width: 100%;
+        padding-left: var(--spacer-3-contenido);
+        padding-right:var(--spacer-3-contenido) ;
+    }
+    .consolidacion div{
+        width: 100%;
+    }
+    .consolidacion div img{
+        width: 100%;
+    }
+    .contenido-objetivos-consolidacion{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .contenedor-objetivos-items-consolidacion{
+        grid-template-columns: 1fr;
+        height: auto;
+        grid-gap: 1%;
+    }
+    .contenedor-politicas-items{
+        grid-template-columns: 1fr;
+        height: auto;
+        grid-gap: 1%;
+    }
+    .mision-vision-consolidacion{
+        grid-template-columns: 1fr;
+        height: auto;
+        grid-gap: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .card-consolidacion p{
+        padding: 2%;
+    }
+    .floristeria-home{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .card-floristeria{
+        width: 90%;
+    }
+
 }
