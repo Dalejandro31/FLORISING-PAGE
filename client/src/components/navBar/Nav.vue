@@ -12,7 +12,7 @@
                     <a @click=" redirigir('/servicios-Centro-Consolidacion')">CENTRO DE CONSOLIDACION</a>
                     <a @click="redirigir('/servicios-Floristeria')">FLORISTERIA</a>
                 </div>
-            </div>
+            </div>  
             
             <div class="desplegable">
                 <button>SOBRE NOSOTROS</button>
@@ -28,10 +28,25 @@
         <div class="overlay" id="mobile-menu">
             <a @click="closeNav()" href="" class="close">&times;</a>
             <div class="overlay-content">
-                <a href="">INICIO</a>
-                <a href="">SERVICIOS</a>
-                <a href="">SOBRE NOSOTROS</a>
-                <a href="">CONTACTANOS</a>
+                <a @click="redirigir('/')">INICIO</a>
+                
+                <div class="desplegable">
+                    <a @click="toggleSubMenu('servicios')">SERVICIOS</a>
+                    <div class="links-menu" v-if="subMenuOpen === 'servicios'">
+                        <a @click="redirigir('/servicios-Centro-Consolidacion')">CENTRO DE CONSOLIDACION</a>
+                        <a @click="redirigir('/servicios-Floristeria')">FLORISTERIA</a>
+                    </div>
+                </div>
+                
+                <div class="desplegable">
+                    <a @click="toggleSubMenu('nosotros')">SOBRE NOSOTROS</a>
+                    <div class="links-menu" v-if="subMenuOpen === 'nosotros'">
+                        <a @click="redirigir('/nosotros-FLORISING-COMMERCIAL-&-LOGISTICS-GROUP')">FLORISING CENTRO DE CONSOLIDACION</a>
+                        <a @click="redirigir('/nosotros-FLORISING-CLG-SAS')">FLORISING EXPORTACIONES</a>
+                    </div>
+                </div>
+                
+                <a @click="$event => redirigir('/contactanos')">CONTACTANOS</a>
             </div>
         </div>
     </nav>
@@ -40,6 +55,11 @@
 <script>
 export default {
     name: 'NavBar',
+    data() {
+        return {
+            subMenuOpen: null
+        };
+    },
     methods:{
         redirigir(ruta){
             this.$router.push(ruta);
@@ -49,7 +69,14 @@ export default {
         },
         closeNav(){
             document.getElementById("mobile-menu").style.width = "0%";
-        }
+        },
+        toggleSubMenu(menu) {
+            if (this.subMenuOpen === menu) {
+                this.subMenuOpen = null; // Cierra el submenú si ya está abierto
+            } else {
+                this.subMenuOpen = menu; // Abre el submenú si está cerrado
+            }
+        },
     }
 }
 </script>

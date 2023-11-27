@@ -20,17 +20,19 @@
 .nuestra-empresa{
     display: flex;
     margin-top: var(--spacer-5-contenido);
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: var(--spacer-5-contenido);
+    margin-right: var(--spacer-5-contenido);
     margin-bottom: var(--spacer-5-contenido);
+   
 }
 .contenido{
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 100%;
-    margin-right: var(--spacer-5-contenido);
+    width: 40%;
+    margin-right: var(--spacer-2-contenido);
     color: var(--gray-0-contenido);
+   
     
 }
 .contenido p{
@@ -40,6 +42,7 @@
     word-wrap: break-word;
     font-size: var(--font-size-2-contenido);
     font-weight: var(--font-weight-thin-contenido);
+    width: 90%;
 }
 .contenido button{
     width: 30%;
@@ -73,14 +76,12 @@
 .infraestructura{
     display: flex;
     height: auto;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    padding-top: var(--spacer-4-contenido);
+    width: 60%;
+    justify-content: right;
 }
 .infraestructura div{
     --shadowColor: var(--secondary-contenido);
-    width: auto;
+    width: 80%;
     box-shadow: 0.80rem 0.80rem 0 var(--shadowColor);
 	border-radius: 0.5rem;
 	overflow: hidden;
@@ -170,18 +171,20 @@
 .floristeria-home{
     display: flex;
     flex-direction: row;
-    
+    width: 60%;
+
 }
 .card-floristeria{
-    width: 40%;
-    height: auto;
+    width: 50%;
+    height: 90%;
     box-shadow: var(--shadows-contenido);
     border:none;
     display: flex;
     flex-direction: column;
     text-align: center;
-    border-radius: .5rem;
-    margin-left: 2rem;
+    border-radius: var(--spacer-2-contenido);
+    margin-left: var(--spacer-1-contenido);
+    position: relative;
 }
 .card-floristeria button{
     display: flex;
@@ -191,7 +194,9 @@
     padding: var(--spacer-4-contenido);
     border: none;
     border-radius: .2rem;
-    margin-top:auto ;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     font-size: var(--font-size-3-contenido);
     font-weight: var(--font-weight-bold-contenido);
     color: var(--gray-0-contenido);
@@ -205,8 +210,7 @@
 
 .card-floristeria img{
     width: 100%;
-    height: 300px;
-    margin-right: var(--spacer-2);
+    height: 40%;
     border-radius: .5rem .5rem 0 0;
     margin-bottom: var(--spacer-4-contenido);
 }
@@ -219,11 +223,26 @@
         padding-left: 2%;
         padding-right: 2%;
     }
+    .contenido{
+        width: 100%;
+        align-items: center;
+    }
+    .contenido h1{
+        text-align: center;
+    }
+    .contenido p{
+        text-align: center;
+    }
     .contenido button{
         display: none;
     }
     .infraestructura{
-        width: 95%;
+        width: 100%;
+        padding-left: var(--spacer-3-contenido);
+        padding-right:var(--spacer-3-contenido) ;
+    }
+    .infraestructura div{
+        width: 100%;
     }
     .infraestructura div img{
         width: 100%;
@@ -235,8 +254,11 @@
     }
     .floristeria-home{
         flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
     .card-floristeria{
         width: 90%;
     }
+
 }

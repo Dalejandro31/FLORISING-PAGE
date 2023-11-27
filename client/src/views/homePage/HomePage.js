@@ -28,7 +28,7 @@ content.content6 = `Ofrecemos productos Verdes Como Helecho, Ruscus,
 lily Grass y Cocculus`;
 content.title6 = `PODUCTOS FLORES ROSAS Y BUCKETS`;
 content.content7 = `Ofrecemos diferentes tipos de rosas, tales como
-Rosa Alex, Rosa Pink, Rosa Orange, Rosa Topaz y muchas mas. Contamos 
+Rosa Alex, Rosa Pink, Rosa Orange y muchas mas. Contamos 
 con Buckets para toda ocación`;
 content.title7 = `CENTRO DE PRODUCTOS Y FLORISTERIA`;
 content.content8 = `FLORISING CLG SAS se ha caracterizado por cultivar y 
