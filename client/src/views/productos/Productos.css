@@ -94,7 +94,6 @@
     height: auto;
   }
   .section{
-    justify-content: center;
     text-align: center;
     width: auto;
     height: auto;
@@ -114,13 +113,12 @@
   .section button:hover{
     width: 150px;
     height: 50px;
-    margin-top: var(--spacer-4-contenido);
     background-color: var(--secondary-contenido);
     border: none;
     color: var(--primary-contenido);
     cursor: pointer;
     font-weight: var(--font-weight-heavy-contenido);
-    box-shadow: var(shad);
+    box-shadow: var(--shadows-productos);
   }
   .contenido-flor{
     padding: var(--spacer-1-productos);
