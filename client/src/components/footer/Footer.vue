@@ -11,9 +11,10 @@
             <div>
                 <div class="titulo-cont">
                     <h1>Contacto</h1>
+                    <div/>
                 </div>
                 
-                <div class="separ-foot"/>
+                
                 <div class="contacto">
                     <img src="../../assets/Contactenos/ubicacion.png" alt="">
                     <div class="cont-contac">
