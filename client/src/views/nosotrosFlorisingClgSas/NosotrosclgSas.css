@@ -1,0 +1,129 @@
+:root {
+    --gray-0-nosotros-Clg-sas:#646464;
+    --gray-1-nosotros-Clg-sas:#b2b6bd;
+    --primary-nosotros-Clg-sas: #f7f4f3;
+    --secondary-nosotros-Clg-sas: #fdc600;
+    --font-size-1-nosotros-Clg-sas: 1.5rem;
+    --font-size-2-nosotros-Clg-sas: 1.2rem;
+    --font-size-3-nosotros-Clg-sas: 1rem;
+    --font-weight-thin-nosotros-Clg-sas: 300;
+    --font-weight-bold-nosotros-Clg-sas: 600;
+    --font-weight-heavy-nosotros-Clg-sas: 800;
+    --spacer-1-nosotros-Clg-sas: .25rem;
+    --spacer-2-nosotros-Clg-sas: .5rem;
+    --spacer-3-nosotros-Clg-sas: 2rem;
+    --spacer-4-nosotros-Clg-sas: 1.5rem;
+    --spacer-5-nosotros-Clg-sas: 20rem;
+    --shadows-nosotro-Clg-sass: 7px 7px 7px rgba(0, 0, 0, .15);
+}
+
+.titulo-nosotros{
+    background-color: var(--gray-0-nosotros-Clg-sas);
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 25px;
+}
+.titulo-nosotros h1{
+    color: var(--primary-nosotros-Clg-sas);
+    font-weight: var(--font-weight-heavy-nosotros-Clg-sas);
+}
+.mision-vision{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15% ;
+    margin-right: 15%;
+    margin-bottom: 7rem;
+}
+.card{
+    width: auto;
+    height: 100%;
+    box-shadow: var(--shadows-nosotros-Clg-sas);
+    border: none;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: var(--primary-nosotros-Clg-sas);
+    text-align: center;
+}
+
+.card div{
+    border-radius: .5rem .5rem 0 0;
+    padding: 5%;
+    background-color: var(--secondary-nosotros-Clg-sas);
+    color: var(--primary-nosotros-Clg-sas);
+}
+.card div h1{
+    font-weight: var(--font-weight-heavy-nosotros-Clg-sas);
+}
+.card p{
+    padding: 10%;
+    margin: 0 0 var(--spacer-3-nosotros-Clg-sas);
+    line-height: 1.5;
+    word-wrap: break-word;
+    font-size: var(--font-size-2-nosotros-Clg-sas);
+    font-weight: var(--font-weight-thin-nosotros-Clg-sas);
+    color: var(--gray-0-nosotros-Clg-sas);
+}
+.objetivos{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15% ;
+    margin-right: 15%;
+    margin-bottom: 7rem;
+}
+.contenido-objetivos{
+    display: flex;
+    flex-direction: column;
+    color: var(--gray-0-nosotros-Clg-sas);
+    text-align: center;
+    align-items: center;
+}
+.contenido-objetivos h1{
+    font-weight: var(--font-weight-bold-nosotros-Clg-sas);
+}
+.contenido-objetivos p{
+    align-items: center;
+    text-align: center;
+    margin: 0 0 var(--spacer-3-nosotros-Clg-sas);
+    line-height: 1.5;
+    word-wrap: break-word;
+    font-size: var(--font-size-2-nosotros-Clg-sas);
+    font-weight: var(--font-weight-thin-nosotros-Clg-sas);
+}
+.contenido-objetivos div{
+    width: 250px;
+    height: 4px; 
+    background-color: var(--secondary-nosotros-Clg-sas);
+    margin-top: 10px; 
+    border-radius: 1rem;
+}
+
+@media screen and (min-width: 270px) and (max-width: 1023px) {
+    .objetivos{
+        grid-template-columns: 1fr;
+        height: auto;
+        grid-gap: 1%;
+    }
+    .mision-vision{
+        grid-template-columns: 1fr;
+        height: auto;
+        grid-gap: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .titulo-nosotros h1{
+        text-align: center;
+    }
+}

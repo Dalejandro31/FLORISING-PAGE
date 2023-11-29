@@ -1,29 +1,173 @@
 :root {
-    --gray-0:#646464;
-    --gray-1:#b2b6bd;
-    --primary: #f7f4f3;
-    --secondary: #fdc600;
-    --font-size-1: 1.5rem;
-    --font-size-2: 1.25rem;
-    --font-size-3: 1rem;
-    --font-weight-thin: 300;
-    --font-weight-bold: 600;
-    --font-weight-heavy: 800;
-    --spacer-1: .25rem;
-    --spacer-2: .5rem;
-    --spacer-3: 1rem;
-    --spacer-4: 1.5rem;
-    --spacer-5: 2rem;
-    --shadows: 7px 7px 7px rgba(0, 0, 0, .15);
+    --gray-0-footer:#646464;
+    --gray-1-footer:#b2b6bd;
+    --primary-footer: #f7f4f3;
+    --secondary-footer: #fdc600;
+    --font-size-1-footer: 1.5rem;
+    --font-size-2-footer: 1.25rem;
+    --font-size-3-footer: 1rem;
+    --font-size-4-footer: 0.7rem;
+    --font-weight-thin-footer: 300;
+    --font-weight-bold-footer: 600;
+    --font-weight-heavy-footer: 800;
+    --spacer-1-footer: .25rem;
+    --spacer-2-footer: .5rem;
+    --spacer-3-footer: 1rem;
+    --spacer-4-footer: 1.5rem;
+    --spacer-5-footer: 4rem;
+    --shadows-footer: 7px 7px 7px rgba(0, 0, 0, .15);
   }
 
 
 .footer{
-    height: auto;
+  height: auto;
+  justify-content: space-between;
+  background-color: var(--gray-0-footer);
+  padding-left: 3%;
+  padding-right: 3%;
+  border-top: 10px solid var(--secondary-footer);
+}
+.redes-contacto{
+  display: grid;
+  height: 170px;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: repeat(1, 1fr);
+  align-items: center;
+  text-align: center;
+  margin-top: -10px;
+}
+.redes{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  justify-content: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  height: auto;
+  width: auto;
+}
+.redes button{
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  width: 30px;
+  box-shadow: var(--shadows-footer);
+}
+.redes button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.redes img{
+  margin-top: 4px;
+  width: 70%;
+}
+.contacto{
+  display: grid;
+  grid-template-columns: 5% 95%;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 40%;
+  width: auto;
+  height: 5px;
+}
+
+.contacto img{
+  width: 90%;
+  margin-bottom: 60%;
+}
+.cont-contac{
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  text-align: left;
+}
+.cont-contac p{
+  margin: 0 0 var(--spacer-3-footer);
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-size: var(--font-size-4-footer);
+  font-weight: var(--font-weight-thin-footer);
+  color: var(--gray-1-footer);
+  width: auto;
+  height: auto;
+  margin-left: 5%;
+}
+
+.titulo-cont{
+  margin-top: 3%;
+  margin-left: 25%;
+}
+.titulo-cont h1{
+  margin: 0 0 var(--spacer-5-footer);
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: var(--font-weight-heavy-footer);
+  font-size: var(--font-size-2-footer);
+  color: var(--gray-1-footer);
+  text-align: left;
+  margin-left: 20%;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+.titulo-cont div{
+  background-color: var(--secondary-servicios);
+  height: 2px;
+  width: 80px;
+  margin-left: 22%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  opacity: 85%;
+  
+}
+
+@media screen and (min-width: 270px) and (max-width: 1024px){
+  .redes-contacto {
+    display: grid;
+    grid-template-columns: 40% 2% 58%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .redes{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .contacto{
+    margin-left: 40%;
+  }
+}
+@media screen and (max-width: 644px) {
+  .contacto{
+    margin-left: 30%;
+  }
+  .titulo-cont{
+    margin-left: 15%;
+  }
+  .redes{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .redes-contacto{
+    display: grid;
+    grid-template-columns: 40% 0% 60%;
+  }
+  .contacto{
+    margin-left: 5%;
+  }
+  .titulo-cont{
+    margin-left: 0%;
+  }
+  .redes{
     display: flex;
-    justify-content: space-between;
-    background-color: var(--gray-0);
-    padding-left: 3%;
-    padding-right: 3%;
-    border-top: 10px solid var(--secondary);
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .redes button{
+    margin-top: 8%;
+  }
 }
