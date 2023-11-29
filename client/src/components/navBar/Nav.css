@@ -1,0 +1,193 @@
+:root {
+    --gray-0-nav:#646464;
+    --primary-nav: #f7f4f3;
+    --gray-1-nav:#b2b6bd;
+    --secondary-nav: #fdc600;
+    --font-size-1-nav: 1.5rem;
+    --font-size-2-nav: 1.25rem;
+    --font-size-3-nav: 1rem;
+    --font-weight-thin-nav: 300;
+    --font-weight-bold-nav: 600;
+    --font-weight-heavy-nav: 800;
+    --spacer-1-nav: .25rem;
+    --spacer-2-nav: .5rem;
+    --spacer-3-nav: 1rem;
+    --spacer-4-nav: 1.5rem;
+    --spacer-5-nav: 2rem;
+    --shadows-nav: 7px 7px 7px rgba(0, 0, 0, .15);
+  }
+
+.NavBar{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-nav);
+    padding-right: 3%;
+    border-bottom: 4px solid var(--secondary-nav);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 13%;
+    overflow: hidden;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.links{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    
+}
+.menu{
+    display: none;
+}
+.desplegable{
+    height: 100%;
+}
+.links button,
+.NavBar .menu button{
+    color: var(--gray-0-nav);
+    font-size: 22px;
+    font-weight: bold;
+    width: 170px;
+    height: 100%;
+    border: none;
+    font-size: var(--font-size-3-nav);
+    background-color: var(--primary-nav);
+    border-radius: .5rem;
+}
+.links button:hover,
+.NavBar .menu button:hover {
+    background: var(--secondary-nav);
+    color: var(--primary-nav);
+    border: none;
+    cursor: pointer;
+}
+.links-menu a{
+    color: var(--gray-0-nav);
+    display: block;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.links-menu{
+    background-color: var(--primary-nav);
+    width: 180px;
+    display: none;
+    border-radius: 10px;
+}
+.links-menu a:hover{
+    background-color: var(--secondary-nav);
+    cursor: pointer;
+}
+.desplegable:hover .links-menu{
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
+/*responsive*/
+
+.NavBar a{
+    text-decoration: none;
+}
+.NavBar .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    background: var(--secondary-nav);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.NavBar .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.NavBar .overlay .overlay-content a{
+    font-size: 20px;
+}
+.links-menu-mobile{
+    background: var(--secondary-nav);
+}
+.links-menu-mobile a{
+    border-bottom: solid 1px var(--primary-nav);
+    border-top:solid 1px var(--primary-nav) ;
+}
+
+.desplegable .links-menu-mobile{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.NavBar .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: var(--primary-nav);
+}
+.NavBar .overlay a:hover,
+.NavBar .overlay a:focus{
+    color: var(--gray-1-nav);
+    cursor: pointer;
+}
+.NavBar .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (min-width: 270px) and (max-width: 1023px) {
+    .links{
+        display: none;
+    }
+    .menu{
+        display: inherit;
+    }
+
+    .NavBar .menu button{
+        box-shadow: 1px 1px 4px var(--secondary-nav);
+        height: 50px;
+        width: 100px;
+    }
+    
+    .logo img{
+        height: 100%;
+        width: 100%;
+    }
+    .logo{
+        width: 150px;
+    }
+    .desplegable{
+        height: auto;
+    }
+}
+
+@media screen and (max-height:350px) {
+    .NavBar .overlay a{
+        font-size: 20px;
+    }
+    .NavBar .overlay .close{
+        font-size: 40px;
+        top:15px;
+        right: 35px;
+    }
+    
+}
+

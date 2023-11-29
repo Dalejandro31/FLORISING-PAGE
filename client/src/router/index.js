@@ -1,19 +1,41 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomePage from '../views/homePage/HomePage.vue'
+import Nosotros from '../views/nosotros/Nosotros.vue'
+import Servicios from '../views/servicios/Servicios.vue'
+import Productos from '../views/productos/Productos.vue'
+import Contactanos from '../views/contactanos/Contactanos.vue'
+import NosotrosClsSas from '../views/nosotrosFlorisingClgSas/NosotrosClgSas.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomePage
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/servicios-Centro-Consolidacion',
+    name: 'Servicios-Consolidacion',
+    component: Servicios
+  },
+  {
+    path: '/nosotros-FLORISING-COMMERCIAL-&-LOGISTICS-GROUP',
+    name: 'Nosotros-Consolidacion',
+    component: Nosotros
+  },
+  {
+    path: '/servicios-Floristeria',
+    name: 'servicios-Floristeria',
+    component: Productos
+  },
+  {
+    path: '/nosotros-FLORISING-CLG-SAS',
+    name: 'Nosotros-Cls-Sas',
+    component: NosotrosClsSas
+  },
+  {
+    path: '/contactanos',
+    name: 'Contactanos',
+    component: Contactanos
   }
 ]
 
