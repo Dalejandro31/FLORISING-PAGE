@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 
-                <a @click="$event => redirigir('/contactanos')">CONTACTANOS</a>
+                <a onclick="changePageTitle()" @click="$event => redirigir('/contactanos')">CONTACTANOS</a>
             </div>
         </div>
     </nav>
@@ -80,7 +80,12 @@ export default {
                 this.subMenuOpen = menu;
             }
         },
+        changePageTitle(){
+            newPageTitle='CONTACTANOS';
+            document.title=newPageTitle;
+        },
     }
+    
 }
 </script>
 <style scoped>
