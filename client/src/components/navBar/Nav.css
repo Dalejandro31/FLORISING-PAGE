@@ -49,13 +49,16 @@
 .menu{
     display: none;
 }
+.desplegable{
+    height: 100%;
+}
 .links button,
 .NavBar .menu button{
     color: var(--gray-0-nav);
     font-size: 22px;
     font-weight: bold;
     width: 170px;
-    height: 90px;
+    height: 100%;
     border: none;
     font-size: var(--font-size-3-nav);
     background-color: var(--primary-nav);
@@ -170,6 +173,9 @@
     }
     .logo{
         width: 150px;
+    }
+    .desplegable{
+        height: auto;
     }
 }
 
