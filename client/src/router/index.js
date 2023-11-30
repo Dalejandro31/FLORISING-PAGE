@@ -14,10 +14,10 @@ const routes = [
     meta:{title: 'Inicio'},
   },
   {
-    path: '/servicios-Centro-Consolidación',
+    path: '/servicios-Centro-Consolidacion',
     name: 'Servicios-Consolidacion',
     component: Servicios,
-    meta:{title: 'Servicios de Consolidación'}, 
+    meta:{title: 'Servicios de Consolidación'},
   },
   {
     path: '/nosotros-FLORISING-COMMERCIAL-&-LOGISTICS-GROUP',

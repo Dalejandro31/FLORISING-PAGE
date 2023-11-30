@@ -26,7 +26,7 @@ content.almacenamientoFrio2 =
 content.title3 = 'TRANSPORTE REFRIGERADO'
 content.transporteRefrigerado =
     `Furgones tipo turbo, van y contenedor`;
-
+ 
 content.title4 = 'OTROS SERVICIOS'
 content.otros = 
 `Centro de negocios /
