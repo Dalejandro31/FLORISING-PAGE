@@ -3,7 +3,7 @@
         <h1> SERVICIOS DE CONSOLIDACIÓN </h1>
     </div>
 
-    <section class="recepcion-y-consolidacion-en-frio" id="recepcion-y-consolidacion-en-frio"> 
+    <section class="recepcion-y-consolidacion-en-frio"> 
         <!-- // se le añade un display felx colum 
         //div -> titulo
         //div -> div -> img : div -> texto -->
