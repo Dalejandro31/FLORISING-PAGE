@@ -1,4 +1,5 @@
 <template>
+<title>Contactenos</title>
 <div class="titulo-contactanos">
     <h1>CONTACTANOS</h1>
 </div>
