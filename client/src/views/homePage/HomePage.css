@@ -238,6 +238,8 @@
     }
     .infraestructura{
         width: 100%;
+        height: 300px;
+        margin-top: 1rem;
         padding-left: var(--spacer-3-contenido);
         padding-right:var(--spacer-3-contenido) ;
     }
@@ -246,6 +248,7 @@
     }
     .infraestructura div img{
         width: 100%;
+        height: 100%;
     }
     .nuestros-servicios{
         grid-template-columns: 1fr;

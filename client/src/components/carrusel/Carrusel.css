@@ -1,12 +1,23 @@
 .carrusel{
     display: flex;
     justify-content: center ;
+    
 }
 .carrusel-inner{
     position: relative;
     width: 100%;
     height: 550px;
     overflow: hidden;
+}
+
+@media screen and (min-width: 270px) and (max-width: 1023px) {
+    .carrusel{
+        height: auto;
+    }
+    .carrusel-inner{
+        height: 250px;
+    }
+
 }
 
 /*********************carrusel item ***************************/

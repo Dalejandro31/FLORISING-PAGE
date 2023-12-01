@@ -3,7 +3,6 @@
 <div class="titulo-contactanos">
     <h1>CONTACTANOS</h1>
 </div>
-<div/>
 <section class="contactanos">
     <div class="mapa">
         <div>
