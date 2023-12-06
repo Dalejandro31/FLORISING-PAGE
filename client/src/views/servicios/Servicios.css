@@ -50,7 +50,6 @@
 .imagenes div img{
     border-radius: 10px;
     margin-right: var(--spacer-2-servicios);
-    border: solid 1px var(--gray-0-servicios) ;
 }
 .imagenes div{
     height: 350px;
@@ -207,6 +206,9 @@
     
 }
 @media screen and (max-width:644px ){
+    .imagenes div{
+        height: 250px;
+    }
     .titulo-izquierda, .titulo-derecha{
         height: auto;
     }
