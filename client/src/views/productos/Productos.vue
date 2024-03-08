@@ -42,6 +42,22 @@
                     <p>{{ content.verde4 }}</p>
                 </div>
             </div>
+            <div>
+                <div class="imagen-verde">
+                    <img src="../../assets/Prod-Verde/EucalyptoBabyBlue-removebg-preview.png" alt="">
+                </div>
+                <div class="contenido-verde">
+                    <p>{{ content.verde5 }}</p>
+                </div>
+            </div>
+            <div>
+                <div class="imagen-verde">
+                    <img src="../../assets/Prod-Verde/Gypso-removebg-preview.png" alt="">
+                </div>
+                <div class="contenido-verde">
+                    <p>{{ content.verde6 }}</p>
+                </div>
+            </div>
         </div>
     </section>
     <div class="separ"/>
@@ -152,8 +168,105 @@
         <div class="titulo-izquierda">
             <p>{{ content.title3 }}</p>
         </div>
-        <div class="nuestro-producto-flor">
+        <div class="nuestro-producto-bouquet">
+            <div>
+                <div class="imagen-bouquet">
+                    <img src="../../assets/Buquets/Bouquet1.jpg" alt="">
+                </div>
+            </div>
 
+            <div>
+                <div class="imagen-bouquet">
+                    <img src="../../assets/Buquets/Bouquet2.jpg" alt="">
+                </div>
+            </div>
+
+            <div>
+                <div class="imagen-bouquet">
+                    <img src="../../assets/Buquets/Bouquet3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="separ"/>
+    <section>
+        <br>
+        <div class="titulo-derecha">
+            <p>{{ content.title4 }}</p>
+        </div>
+        <div class="nuestro-producto-variedad">
+            <div>
+                <div class="imagen-variedad">
+                    <img src="../../assets/Diversificacion/girasol.jpg" alt="">
+                </div>
+                <br>
+                <div class="contenido-variedad">
+                    <p>{{ content.diver1 }}</p>
+                </div>
+            </div>
+            <div>
+                <div class="imagen-variedad">
+                    <img src="../../assets/Diversificacion/proteas.jpg" alt="">
+                </div>
+                <br>
+                <div class="contenido-variedad">
+                    <p>{{ content.diver2 }}</p>
+                </div>
+            </div>
+            <div>
+                <div class="imagen-variedad">
+                    <img src="../../assets/Diversificacion/gerbera.jpg" alt="">
+                </div>
+                <br>
+                <div class="contenido-variedad">
+                    <p>{{ content.diver3 }}</p>
+                </div>
+            </div>
+            <div>
+                <div class="imagen-variedad">
+                    <img src="../../assets/Diversificacion/clavel.jpg" alt="">
+                </div>
+                <br>
+                <div class="contenido-variedad">
+                    <p>{{ content.diver4 }}</p>
+                </div>
+            </div>
+            <div>
+                <div class="imagen-variedad">
+                    <img src="../../assets/Diversificacion/astromelia.jpg" alt="">
+                </div>
+                <br>
+                <div class="contenido-variedad">
+                    <p>{{ content.diver5 }}</p>
+                </div>
+            </div>
+            <div>
+                <div class="imagen-variedad">
+                    <img src="../../assets/Diversificacion/agapantos.jpg" alt="">
+                </div>
+                <br>
+                <div class="contenido-variedad">
+                    <p>{{ content.diver6 }}</p>
+                </div>
+            </div>
+            <div>
+                <div class="imagen-variedad">
+                    <img src="../../assets/Diversificacion/boca-dragon.jpg" alt="">
+                </div>
+                <br>
+                <div class="contenido-variedad">
+                    <p>{{ content.diver7 }}</p>
+                </div>
+            </div>
+            <div>
+                <div class="imagen-variedad">
+                    <img src="../../assets/Diversificacion/aster.jpg" alt="">
+                </div>
+                <br>
+                <div class="contenido-variedad">
+                    <p>{{ content.diver8 }}</p>
+                </div>
+            </div>
         </div>
     </section>
 </template>
